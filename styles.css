@@ -1,4 +1,3 @@
-
 /* MyanLawLexicon - Custom Styles */
 
 /* Root Variables for Theme Support - Myanmar National Flag Colors (50% Red, 30% Green, 15% Yellow, 5% White) */
@@ -309,11 +308,90 @@ body {
 }
 
 .navbar-toggler {
-    border-color: var(--text-primary) !important;
+    border: 2px solid rgba(255, 255, 255, 0.9) !important;
+    border-radius: 12px !important;
+    padding: 0.6rem 0.8rem !important;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05)) !important;
+    backdrop-filter: blur(15px) !important;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06) !important;
+    color: #FFFFFF !important;
+    position: relative !important;
+    overflow: hidden !important;
+    margin-left: auto !important;
+    order: 999 !important;
+    min-width: 50px !important;
+    height: 50px !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.navbar-toggler::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1;
+}
+
+.navbar-toggler::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, transparent 70%);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 0;
+}
+
+.navbar-toggler:hover::before {
+    left: 100%;
+}
+
+.navbar-toggler:hover::after {
+    width: 100px;
+    height: 100px;
+}
+
+.navbar-toggler:hover {
+    border-color: #FFFFFF !important;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.1)) !important;
+    transform: translateY(-2px) scale(1.02) !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.3rem rgba(255, 255, 255, 0.3) !important;
+    border-color: #FFFFFF !important;
+    outline: none !important;
+}
+
+.navbar-toggler:active {
+    transform: translateY(-1px) scale(0.98) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
 }
 
 .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2826, 26, 26, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='%23FFFFFF' d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'/%3e%3c/svg%3e") !important;
+    width: 1.3em !important;
+    height: 1.3em !important;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    position: relative !important;
+    z-index: 2 !important;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1)) !important;
+}
+
+.navbar-toggler:hover .navbar-toggler-icon {
+    transform: scale(1.15) rotate(5deg) !important;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2)) !important;
 }
 
 .btn {
@@ -379,6 +457,95 @@ footer .bi-eye {
 
 [data-theme="dark"] footer .bi-eye {
     color: var(--primary-color) !important;
+}
+
+/* Dark theme navbar toggler */
+[data-theme="dark"] .navbar-toggler {
+    border: 2px solid rgba(255, 255, 255, 0.95) !important;
+    border-radius: 12px !important;
+    padding: 0.6rem 0.8rem !important;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.08)) !important;
+    backdrop-filter: blur(15px) !important;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+    color: #FFFFFF !important;
+    position: relative !important;
+    overflow: hidden !important;
+    margin-left: auto !important;
+    order: 999 !important;
+    min-width: 50px !important;
+    height: 50px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+[data-theme="dark"] .navbar-toggler::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: left 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1;
+}
+
+[data-theme="dark"] .navbar-toggler::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 70%);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 0;
+}
+
+[data-theme="dark"] .navbar-toggler:hover::before {
+    left: 100%;
+}
+
+[data-theme="dark"] .navbar-toggler:hover::after {
+    width: 100px;
+    height: 100px;
+}
+
+[data-theme="dark"] .navbar-toggler:hover {
+    border-color: #FFFFFF !important;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.15)) !important;
+    transform: translateY(-2px) scale(1.02) !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4), 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+[data-theme="dark"] .navbar-toggler:focus {
+    box-shadow: 0 0 0 0.3rem rgba(255, 255, 255, 0.4) !important;
+    border-color: #FFFFFF !important;
+    outline: none !important;
+}
+
+[data-theme="dark"] .navbar-toggler:active {
+    transform: translateY(-1px) scale(0.98) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+}
+
+[data-theme="dark"] .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='%23FFFFFF' d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'/%3e%3c/svg%3e") !important;
+    width: 1.3em !important;
+    height: 1.3em !important;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    position: relative !important;
+    z-index: 2 !important;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2)) !important;
+}
+
+[data-theme="dark"] .navbar-toggler:hover .navbar-toggler-icon {
+    transform: scale(1.15) rotate(5deg) !important;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)) !important;
 }
 
 /* Global Styles */
@@ -739,11 +906,35 @@ body {
     }
 }
 
+/* Desktop Navbar Layout */
+@media (min-width: 992px) {
+    .navbar-toggler {
+        display: none !important;
+    }
+}
+
 /* Mobile Navbar Improvements */
 @media (max-width: 991.98px) {
     .navbar {
         padding: 0.5rem 0;
         min-height: 56px;
+    }
+    
+    .navbar .container-fluid {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+    }
+    
+    .navbar .d-flex {
+        order: 1 !important;
+        flex: 1 !important;
+    }
+    
+    .navbar-toggler {
+        order: 2 !important;
+        margin-left: 1rem !important;
+        float: none !important;
     }
     
     .navbar-collapse {
@@ -1431,4 +1622,10 @@ body {
 .dropdown-item:hover {
     background: var(--primary-color);
     color: white;
+}
+
+@media (min-width: 992px) {
+    .navbar-toggler {
+        display: none !important;
+    }
 }

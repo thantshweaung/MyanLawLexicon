@@ -199,6 +199,17 @@ body {
     border-color: rgba(255, 255, 255, 0.5) !important;
 }
 
+#themeToggle {
+    color: #FFFFFF !important;
+    border-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+#themeToggle:hover {
+    background-color: var(--primary-color) !important;
+    color: #FFFFFF !important;
+    border-color: var(--primary-color) !important;
+}
+
 .btn-outline-light:hover {
     background-color: var(--primary-color) !important;
     color: white !important;
@@ -220,7 +231,6 @@ body {
 
 .input-group-text {
     background-color: var(--gray-200) !important;
-    color: var(--text-primary) !important;
     border-color: var(--gray-300) !important;
 }
 
@@ -340,6 +350,35 @@ body {
 .btn-outline-secondary:hover {
     background-color: var(--secondary-color) !important;
     color: white !important;
+}
+
+/* Footer Visitor Counter Styling */
+#visitorCount {
+    color: var(--primary-color) !important;
+    font-size: 1.1rem;
+}
+
+footer .bi-eye {
+    color: var(--secondary-color) !important;
+}
+
+/* Dark theme footer styling */
+[data-theme="dark"] footer {
+    background-color: var(--bs-card-bg) !important;
+    color: var(--text-primary) !important;
+    border-top: 1px solid var(--bs-border-color) !important;
+}
+
+[data-theme="dark"] footer .text-muted {
+    color: var(--text-muted) !important;
+}
+
+[data-theme="dark"] #visitorCount {
+    color: var(--accent-color) !important;
+}
+
+[data-theme="dark"] footer .bi-eye {
+    color: var(--primary-color) !important;
 }
 
 /* Global Styles */

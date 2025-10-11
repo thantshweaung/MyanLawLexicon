@@ -10,6 +10,7 @@ let currentFilter = 'all';
 let isAuthenticated = false;
 let currentEditingIndex = -1;
 let searchTimeout;
+let visitorCount = 0;
 
 // Password hash for authentication (admin123)
 const PASSWORD_HASH = '240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9';
@@ -29,6 +30,7 @@ const elements = {
     searchSuggestions: document.getElementById('searchSuggestions'),
     searchSuggestionsMobile: document.getElementById('searchSuggestionsMobile'),
     themeToggle: document.getElementById('themeToggle'),
+    visitorCount: document.getElementById('visitorCount'),
     termDetailModal: document.getElementById('termDetailModal'),
     passwordModal: document.getElementById('passwordModal'),
     editTermModal: document.getElementById('editTermModal'),
@@ -80,6 +82,7 @@ function initializeApp() {
     loadDictionaryData();
     setupEventListeners();
     setupThemeToggle();
+    initializeVisitorCounter();
     console.log('MyanLawLexicon initialized successfully');
 }
 
@@ -772,10 +775,114 @@ CryptoJS.SHA256('your_password_here').toString()
 Current password hash: ${PASSWORD_HASH}
 `);
 
+// Visitor Counter Functions - Server-side tracking simulation
+function initializeVisitorCounter() {
+    // Simulate server-side visitor tracking
+    // In a real application, this would make an API call to your server
+    fetchVisitorCount();
+}
+
+async function fetchVisitorCount() {
+    try {
+        // Simulate API call to get visitor count
+        // For demo purposes, we'll use a combination of localStorage and sessionStorage
+        // to simulate different users
+        
+        // Check if this is a new session (different browser/device)
+        const sessionId = sessionStorage.getItem('sessionId');
+        if (!sessionId) {
+            // New session - increment visitor count
+            const storedCount = localStorage.getItem('visitorCount');
+            visitorCount = storedCount ? parseInt(storedCount) + 1 : 1;
+            localStorage.setItem('visitorCount', visitorCount.toString());
+            
+            // Generate unique session ID
+            const newSessionId = 'session_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+            sessionStorage.setItem('sessionId', newSessionId);
+            
+            // Store session info
+            const sessions = JSON.parse(localStorage.getItem('visitorSessions') || '[]');
+            sessions.push({
+                id: newSessionId,
+                timestamp: new Date().toISOString(),
+                userAgent: navigator.userAgent.substring(0, 100), // Truncate for storage
+                ip: 'simulated_ip_' + Math.random().toString(36).substr(2, 8)
+            });
+            
+            // Keep only last 50 sessions to prevent localStorage overflow
+            if (sessions.length > 50) {
+                sessions.splice(0, sessions.length - 50);
+            }
+            
+            localStorage.setItem('visitorSessions', JSON.stringify(sessions));
+        } else {
+            // Existing session - get current count
+            const storedCount = localStorage.getItem('visitorCount');
+            visitorCount = storedCount ? parseInt(storedCount) : 0;
+        }
+        
+        // Update display
+        updateVisitorDisplay();
+        
+        // Simulate real-time updates (in a real app, this would be WebSocket or polling)
+        setTimeout(() => {
+            // Simulate occasional visitor count updates
+            if (Math.random() < 0.1) { // 10% chance of update
+                const storedCount = localStorage.getItem('visitorCount');
+                if (storedCount) {
+                    visitorCount = parseInt(storedCount);
+                    updateVisitorDisplay();
+                }
+            }
+        }, 5000);
+        
+    } catch (error) {
+        console.error('Error fetching visitor count:', error);
+        // Fallback to localStorage
+        const storedCount = localStorage.getItem('visitorCount');
+        visitorCount = storedCount ? parseInt(storedCount) : 1;
+        updateVisitorDisplay();
+    }
+}
+
+function updateVisitorDisplay() {
+    if (elements.visitorCount) {
+        elements.visitorCount.textContent = visitorCount.toLocaleString();
+    }
+}
+
+function getVisitorStats() {
+    const sessions = JSON.parse(localStorage.getItem('visitorSessions') || '[]');
+    const today = new Date().toDateString();
+    const todaySessions = sessions.filter(session => 
+        new Date(session.timestamp).toDateString() === today
+    );
+    
+    // Calculate unique users (approximate)
+    const uniqueUsers = new Set(sessions.map(s => s.ip)).size;
+    
+    // Calculate this week's visits
+    const weekAgo = new Date();
+    weekAgo.setDate(weekAgo.getDate() - 7);
+    const thisWeekSessions = sessions.filter(session => 
+        new Date(session.timestamp) > weekAgo
+    );
+    
+    return {
+        totalVisits: visitorCount,
+        uniqueUsers: uniqueUsers,
+        todayVisits: todaySessions.length,
+        thisWeekVisits: thisWeekSessions.length,
+        totalSessions: sessions.length,
+        lastVisit: sessions.length > 0 ? sessions[sessions.length - 1].timestamp : null
+    };
+}
+
 // Export functions for debugging
 window.MyanLawLexicon = {
     dictionaryData: () => dictionaryData,
     filteredData: () => filteredData,
     isAuthenticated: () => isAuthenticated,
-    generatePasswordHash: (password) => CryptoJS.SHA256(password).toString()
+    generatePasswordHash: (password) => CryptoJS.SHA256(password).toString(),
+    getVisitorStats: getVisitorStats
 };

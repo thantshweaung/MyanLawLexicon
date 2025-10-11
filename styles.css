@@ -294,6 +294,27 @@ body {
     background-color: var(--info-color) !important;
 }
 
+/* Type-Specific Badge Colors */
+.badge.bg-noun {
+    background-color: #10B981 !important;
+    color: white !important;
+}
+
+.badge.bg-verb {
+    background-color: #3B82F6 !important;
+    color: white !important;
+}
+
+.badge.bg-adjective {
+    background-color: #F59E0B !important;
+    color: white !important;
+}
+
+.badge.bg-adverb {
+    background-color: #8B5CF6 !important;
+    color: white !important;
+}
+
 /* Additional Light Theme Fixes */
 .term-card .myanmar-text {
     color: var(--text-primary) !important;
@@ -318,12 +339,15 @@ body {
     color: #FFFFFF !important;
     position: relative !important;
     overflow: hidden !important;
+    float: right !important;
     margin-left: auto !important;
+    margin-right: 0 !important;
     order: 999 !important;
     min-width: 50px !important;
     height: 50px !important;
     align-items: center !important;
     justify-content: center !important;
+    clear: right !important;
 }
 
 .navbar-toggler::before {
@@ -471,13 +495,16 @@ footer .bi-eye {
     color: #FFFFFF !important;
     position: relative !important;
     overflow: hidden !important;
+    float: right !important;
     margin-left: auto !important;
+    margin-right: 0 !important;
     order: 999 !important;
     min-width: 50px !important;
     height: 50px !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
+    clear: right !important;
 }
 
 [data-theme="dark"] .navbar-toggler::before {
@@ -689,40 +716,40 @@ body {
 
 /* Card Type Indicators */
 .term-card[data-type="n"]::before {
-    background: var(--primary-color);
+    background: #10B981; /* Green for Nouns */
 }
 
 .term-card[data-type="v"]::before {
-    background: var(--secondary-color);
+    background: #3B82F6; /* Blue for Verbs */
 }
 
 .term-card[data-type="adj"]::before {
-    background: var(--accent-color);
+    background: #F59E0B; /* Orange for Adjectives */
 }
 
 .term-card[data-type="adv"]::before {
-    background: var(--primary-color);
+    background: #8B5CF6; /* Purple for Adverbs */
 }
 
-/* Card Hover States - Myanmar Flag Colors */
+/* Card Hover States - Type-Specific Colors */
 .term-card[data-type="n"]:hover {
-    border-color: var(--primary-color);
-    box-shadow: 0 8px 20px rgba(234, 40, 57, 0.3), 0 4px 8px rgba(234, 40, 57, 0.2);
+    border-color: #10B981;
+    box-shadow: 0 8px 20px rgba(16, 185, 129, 0.3), 0 4px 8px rgba(16, 185, 129, 0.2);
 }
 
 .term-card[data-type="v"]:hover {
-    border-color: var(--secondary-color);
-    box-shadow: 0 8px 20px rgba(52, 178, 51, 0.3), 0 4px 8px rgba(52, 178, 51, 0.2);
+    border-color: #3B82F6;
+    box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3), 0 4px 8px rgba(59, 130, 246, 0.2);
 }
 
 .term-card[data-type="adj"]:hover {
-    border-color: var(--accent-color);
-    box-shadow: 0 8px 20px rgba(254, 203, 0, 0.3), 0 4px 8px rgba(254, 203, 0, 0.2);
+    border-color: #F59E0B;
+    box-shadow: 0 8px 20px rgba(245, 158, 11, 0.3), 0 4px 8px rgba(245, 158, 11, 0.2);
 }
 
 .term-card[data-type="adv"]:hover {
-    border-color: var(--primary-color);
-    box-shadow: 0 8px 20px rgba(234, 40, 57, 0.25), 0 4px 8px rgba(254, 203, 0, 0.15);
+    border-color: #8B5CF6;
+    box-shadow: 0 8px 20px rgba(139, 92, 246, 0.3), 0 4px 8px rgba(139, 92, 246, 0.2);
 }
 
 /* Card Focus States */
@@ -911,6 +938,16 @@ body {
     .navbar-toggler {
         display: none !important;
     }
+}
+
+/* Force navbar toggler to float right */
+.navbar .navbar-toggler {
+    float: right !important;
+    margin-left: auto !important;
+    margin-right: 0 !important;
+    clear: right !important;
+    position: relative !important;
+    z-index: 1000 !important;
 }
 
 /* Mobile Navbar Improvements */

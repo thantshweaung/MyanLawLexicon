@@ -284,7 +284,7 @@ function showSearchSuggestions(query, type = 'desktop') {
         <div class="suggestion-item" data-text="${escapeHtml(suggestion.text)}">
             <div class="d-flex justify-content-between align-items-center">
                 <strong>${escapeHtml(suggestion.text)}</strong>
-                <span class="badge bg-primary">${escapeHtml(suggestion.type)}</span>
+                <span class="badge bg-${getTypeClass(suggestion.type)}">${escapeHtml(suggestion.type)}</span>
             </div>
             <small class="text-muted">${escapeHtml(suggestion.definition)}</small>
         </div>
@@ -420,7 +420,7 @@ function renderTerms() {
             <div class="card-body">
                 <h5 class="card-title">${escapeHtml(term.word)}</h5>
                 <div class="d-flex justify-content-between align-items-center mb-2">
-                    <span class="badge">${escapeHtml(term.type)}</span>
+                    <span class="badge bg-${getTypeClass(term.type)}">${escapeHtml(term.type)}</span>
                 </div>
                 <p class="card-text myanmar-text mt-2">${escapeHtml(term.definition)}</p>
             </div>
@@ -761,6 +761,19 @@ function escapeHtml(text) {
     const div = document.createElement('div');
     div.textContent = text;
     return div.innerHTML;
+}
+
+/**
+ * Get CSS class for term type
+ */
+function getTypeClass(type) {
+    const typeMap = {
+        'n': 'noun',
+        'v': 'verb', 
+        'adj': 'adjective',
+        'adv': 'adverb'
+    };
+    return typeMap[type.toLowerCase()] || 'primary';
 }
 
 /**

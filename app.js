@@ -11,8 +11,8 @@ let isAuthenticated = false;
 let currentEditingIndex = -1;
 let searchTimeout;
 
-// Password hash for authentication (admin123$)
-const PASSWORD_HASH = 'a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3';
+// Password hash for authentication (admin123)
+const PASSWORD_HASH = '240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9';
 
 // DOM elements
 const elements = {
@@ -22,13 +22,13 @@ const elements = {
     resultsInfo: document.getElementById('resultsInfo'),
     resultsCount: document.getElementById('resultsCount'),
     searchInput: document.getElementById('searchInput'),
+    searchInputMobile: document.getElementById('searchInputMobile'),
     clearSearch: document.getElementById('clearSearch'),
+    clearSearchMobile: document.getElementById('clearSearchMobile'),
     resetFilters: document.getElementById('resetFilters'),
+    searchSuggestions: document.getElementById('searchSuggestions'),
+    searchSuggestionsMobile: document.getElementById('searchSuggestionsMobile'),
     themeToggle: document.getElementById('themeToggle'),
-    downloadBtn: document.getElementById('downloadBtn'),
-    addTermBtn: document.getElementById('addTermBtn'),
-    
-    // Modals
     termDetailModal: document.getElementById('termDetailModal'),
     passwordModal: document.getElementById('passwordModal'),
     editTermModal: document.getElementById('editTermModal'),
@@ -58,14 +58,19 @@ const elements = {
     editDefinition: document.getElementById('editDefinition'),
     editExample: document.getElementById('editExample'),
     saveTermBtn: document.getElementById('saveTermBtn'),
-    deleteTermBtn: document.getElementById('deleteTermBtn')
+    deleteTermBtn: document.getElementById('deleteTermBtn'),
+    downloadBtn: document.getElementById('downloadBtn'),
+    addTermBtn: document.getElementById('addTermBtn'),
 };
 
 /**
  * Initialize the application
  */
 $(document).ready(function() {
-    initializeApp();
+    // Wait a bit for CryptoJS to load
+    setTimeout(function() {
+        initializeApp();
+    }, 100);
 });
 
 /**
@@ -117,8 +122,31 @@ async function loadDictionaryData() {
 function setupEventListeners() {
     // Search functionality
     elements.searchInput.addEventListener('input', handleSearch);
+    elements.searchInput.addEventListener('focus', function() {
+        if (elements.searchInput.value.length >= 2) {
+            showSearchSuggestions(elements.searchInput.value.toLowerCase(), 'desktop');
+        }
+    });
     elements.clearSearch.addEventListener('click', clearSearch);
+    
+    // Mobile search functionality
+    elements.searchInputMobile.addEventListener('input', handleSearchMobile);
+    elements.searchInputMobile.addEventListener('focus', function() {
+        if (elements.searchInputMobile.value.length >= 2) {
+            showSearchSuggestions(elements.searchInputMobile.value.toLowerCase(), 'mobile');
+        }
+    });
+    elements.clearSearchMobile.addEventListener('click', clearSearchMobile);
+    
     elements.resetFilters.addEventListener('click', resetFilters);
+    
+    // Hide suggestions when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.search-container')) {
+            elements.searchSuggestions.style.display = 'none';
+            elements.searchSuggestionsMobile.style.display = 'none';
+        }
+    });
     
     // Filter dropdown
     document.querySelectorAll('[data-filter]').forEach(item => {
@@ -133,13 +161,33 @@ function setupEventListeners() {
         }
     });
     
-    elements.saveTermBtn.addEventListener('click', handleSaveTerm);
     elements.deleteTermBtn.addEventListener('click', handleDeleteTerm);
     elements.addTermBtn.addEventListener('click', handleAddTerm);
+    const editTermBtn = document.getElementById('editTermBtn');
+    if (editTermBtn) {
+        editTermBtn.addEventListener('click', function() {
+            if (!isAuthenticated) {
+                // Show password modal first
+                const passwordModal = new bootstrap.Modal(elements.passwordModal);
+                passwordModal.show();
+            } else {
+                // Directly show edit modal
+                showEditModal();
+            }
+        });
+    }
     
     // Edit modal form validation
     elements.editTermForm.addEventListener('submit', function(e) {
         e.preventDefault();
+        console.log('Form submitted');
+        handleSaveTerm();
+    });
+    
+    // Save button click handler
+    elements.saveTermBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        console.log('Save button clicked');
         handleSaveTerm();
     });
     
@@ -182,7 +230,75 @@ function handleSearch() {
     searchTimeout = setTimeout(() => {
         const query = elements.searchInput.value.toLowerCase().trim();
         filterTerms(query);
+        showSearchSuggestions(query, 'desktop');
     }, 300); // Debounce search
+}
+
+/**
+ * Handle mobile search input
+ */
+function handleSearchMobile() {
+    clearTimeout(searchTimeout);
+    searchTimeout = setTimeout(() => {
+        const query = elements.searchInputMobile.value.toLowerCase().trim();
+        filterTerms(query);
+        showSearchSuggestions(query, 'mobile');
+    }, 300); // Debounce search
+}
+
+/**
+ * Show search suggestions
+ */
+function showSearchSuggestions(query, type = 'desktop') {
+    const suggestionsElement = type === 'mobile' ? elements.searchSuggestionsMobile : elements.searchSuggestions;
+    const inputElement = type === 'mobile' ? elements.searchInputMobile : elements.searchInput;
+    
+    if (!query || query.length < 2) {
+        suggestionsElement.style.display = 'none';
+        return;
+    }
+    
+    // Get suggestions from dictionary data
+    const suggestions = dictionaryData
+        .filter(term => 
+            term.word.toLowerCase().includes(query) || 
+            term.definition.toLowerCase().includes(query)
+        )
+        .slice(0, 5) // Limit to 5 suggestions
+        .map(term => ({
+            text: term.word,
+            type: term.type,
+            definition: term.definition.substring(0, 60) + '...'
+        }));
+    
+    if (suggestions.length === 0) {
+        suggestionsElement.style.display = 'none';
+        return;
+    }
+    
+    // Build suggestions HTML
+    const suggestionsHTML = suggestions.map(suggestion => `
+        <div class="suggestion-item" data-text="${escapeHtml(suggestion.text)}">
+            <div class="d-flex justify-content-between align-items-center">
+                <strong>${escapeHtml(suggestion.text)}</strong>
+                <span class="badge bg-primary">${escapeHtml(suggestion.type)}</span>
+            </div>
+            <small class="text-muted">${escapeHtml(suggestion.definition)}</small>
+        </div>
+    `).join('');
+    
+    suggestionsElement.innerHTML = suggestionsHTML;
+    suggestionsElement.style.display = 'block';
+    
+    // Add click event listeners to suggestions
+    suggestionsElement.querySelectorAll('.suggestion-item').forEach(item => {
+        item.addEventListener('click', function() {
+            const text = this.getAttribute('data-text');
+            inputElement.value = text;
+            suggestionsElement.style.display = 'none';
+            filterTerms(text.toLowerCase());
+        });
+    });
 }
 
 /**
@@ -191,6 +307,17 @@ function handleSearch() {
 function clearSearch() {
     elements.searchInput.value = '';
     elements.searchInput.focus();
+    elements.searchSuggestions.style.display = 'none';
+    filterTerms('');
+}
+
+/**
+ * Clear mobile search input
+ */
+function clearSearchMobile() {
+    elements.searchInputMobile.value = '';
+    elements.searchInputMobile.focus();
+    elements.searchSuggestionsMobile.style.display = 'none';
     filterTerms('');
 }
 
@@ -301,8 +428,11 @@ function renderTerms() {
     
     // Add click event listeners to term cards
     elements.termsGrid.querySelectorAll('.term-card').forEach(card => {
-        card.addEventListener('click', function() {
+        card.addEventListener('click', function(e) {
+            e.preventDefault();
+            console.log('Term card clicked');
             const index = parseInt(this.getAttribute('data-index'));
+            console.log('Card index:', index);
             showTermDetail(index);
         });
         
@@ -310,7 +440,9 @@ function renderTerms() {
         card.addEventListener('keypress', function(e) {
             if (e.key === 'Enter' || e.key === ' ') {
                 e.preventDefault();
+                console.log('Term card keypress');
                 const index = parseInt(this.getAttribute('data-index'));
+                console.log('Card index:', index);
                 showTermDetail(index);
             }
         });
@@ -321,8 +453,20 @@ function renderTerms() {
  * Show term detail modal
  */
 function showTermDetail(index) {
+    console.log('showTermDetail called with index:', index);
     const term = filteredData[index];
-    if (!term) return;
+    console.log('Term found:', term);
+    
+    if (!term) {
+        console.error('No term found at index:', index);
+        return;
+    }
+    
+    // Check if elements exist
+    if (!elements.termDetailModal) {
+        console.error('termDetailModal element not found');
+        return;
+    }
     
     elements.termDetailTitle.textContent = term.word;
     elements.termDetailEnglish.textContent = term.word;
@@ -337,6 +481,7 @@ function showTermDetail(index) {
     // Store the original index for editing
     currentEditingIndex = dictionaryData.findIndex(item => item === term);
     
+    console.log('Showing modal for term:', term.word);
     const modal = new bootstrap.Modal(elements.termDetailModal);
     modal.show();
 }
@@ -346,7 +491,25 @@ function showTermDetail(index) {
  */
 function handleAuthentication() {
     const password = elements.passwordInput.value;
-    const hashedPassword = CryptoJS.SHA256(password).toString();
+    
+    // Check if CryptoJS is available, use fallback if not
+    let hashedPassword;
+    if (typeof CryptoJS !== 'undefined') {
+        hashedPassword = CryptoJS.SHA256(password).toString();
+    } else {
+        // Fallback: simple password check (less secure but functional)
+        console.warn('CryptoJS not available, using fallback authentication');
+        if (password === 'admin123') {
+            hashedPassword = PASSWORD_HASH; // Match the expected hash
+        } else {
+            hashedPassword = 'invalid';
+        }
+    }
+    
+    console.log('Password entered:', password);
+    console.log('Hashed password:', hashedPassword);
+    console.log('Expected hash:', PASSWORD_HASH);
+    console.log('Hashes match:', hashedPassword === PASSWORD_HASH);
     
     if (hashedPassword === PASSWORD_HASH) {
         isAuthenticated = true;
@@ -360,9 +523,9 @@ function handleAuthentication() {
         // Show edit modal
         showEditModal();
         
-        // Show authenticated UI elements
-        elements.downloadBtn.style.display = 'inline-block';
-        elements.addTermBtn.style.display = 'block';
+        // Keep Add Term and Export buttons hidden
+        elements.downloadBtn.style.display = 'none';
+        elements.addTermBtn.style.display = 'none';
         
         console.log('User authenticated successfully');
     } else {
@@ -370,6 +533,7 @@ function handleAuthentication() {
         elements.passwordError.textContent = 'Invalid password. Please try again.';
         elements.passwordInput.value = '';
         elements.passwordInput.focus();
+        console.log('Authentication failed');
     }
 }
 
@@ -382,7 +546,7 @@ function showEditModal() {
         const term = dictionaryData[currentEditingIndex];
         elements.editModalTitle.textContent = 'Edit Term';
         elements.editEnglish.value = term.word;
-        elements.editMyanmar.value = term.definition;
+        elements.editMyanmar.value = term.word; // Myanmar term (same as English for now)
         elements.editType.value = term.type;
         elements.editDirection.value = 'en-my';
         elements.editDefinition.value = term.definition;
@@ -417,8 +581,12 @@ function handleAddTerm() {
  * Handle save term
  */
 function handleSaveTerm() {
+    console.log('handleSaveTerm called');
+    console.log('Current editing index:', currentEditingIndex);
+    
     // Validate form
     if (!elements.editTermForm.checkValidity()) {
+        console.log('Form validation failed');
         elements.editTermForm.reportValidity();
         return;
     }
@@ -426,8 +594,10 @@ function handleSaveTerm() {
     const termData = {
         word: elements.editEnglish.value.trim(),
         type: elements.editType.value,
-        definition: elements.editMyanmar.value.trim()
+        definition: elements.editDefinition.value.trim()
     };
+    
+    console.log('Term data to save:', termData);
     
     if (currentEditingIndex >= 0) {
         // Update existing term
@@ -440,13 +610,18 @@ function handleSaveTerm() {
     }
     
     // Refresh display
+    console.log('Refreshing display...');
     filterTerms(elements.searchInput.value.toLowerCase().trim());
     
     // Close modal
+    console.log('Closing modal...');
     const modal = bootstrap.Modal.getInstance(elements.editTermModal);
-    modal.hide();
+    if (modal) {
+        modal.hide();
+    }
     
     // Show success message
+    console.log('Showing success message...');
     showSuccess(currentEditingIndex >= 0 ? 'Term updated successfully!' : 'Term added successfully!');
 }
 
@@ -589,7 +764,8 @@ function escapeHtml(text) {
  * Console helper for password hash generation
  */
 console.log(`
-🔐 Password Hash Generator
+🔐 Password Authentication Info
+Current password: admin123
 To generate a new password hash, run this in the browser console:
 CryptoJS.SHA256('your_password_here').toString()
 

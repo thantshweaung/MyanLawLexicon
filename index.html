@@ -16,23 +16,69 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand fw-bold" href="#">
-                <i class="bi bi-book-half me-2"></i>MyanLawLexicon
-            </a>
+            <!-- Brand and Toggle -->
+            <div class="d-flex align-items-center">
+                <a class="navbar-brand fw-bold" href="#">
+                    <i class="bi bi-book-half me-2"></i>
+                    <span class="brand-text">MyanLawLexicon</span>
+                </a>
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
             
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
+            <!-- Collapsible Content -->
             <div class="collapse navbar-collapse" id="navbarNav">
-                <div class="navbar-nav me-auto">
+                <!-- Mobile Search (Full Width) -->
+                <div class="d-lg-none w-100 mb-3">
+                    <div class="search-container">
+                        <div class="input-group search-input-group">
+                            <span class="input-group-text search-icon">
+                                <i class="bi bi-search"></i>
+                            </span>
+                            <input type="text" class="form-control search-input" id="searchInputMobile" placeholder="Search any legal terms..." autocomplete="off">
+                            <button class="btn search-clear-btn" type="button" id="clearSearchMobile" title="Clear search">
+                                <i class="bi bi-x"></i>
+                            </button>
+                            <div class="search-suggestions" id="searchSuggestionsMobile" style="display: none;">
+                                <!-- Suggestions will be populated here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Desktop Search -->
+                <div class="d-none d-lg-flex flex-grow-1 mx-3">
+                    <div class="search-container">
+                        <div class="input-group search-input-group">
+                            <span class="input-group-text search-icon">
+                                <i class="bi bi-search"></i>
+                            </span>
+                            <input type="text" class="form-control search-input" id="searchInput" placeholder="Search any legal terms..." autocomplete="off">
+                            <button class="btn search-clear-btn" type="button" id="clearSearch" title="Clear search">
+                                <i class="bi bi-x"></i>
+                            </button>
+                            <div class="search-suggestions" id="searchSuggestions" style="display: none;">
+                                <!-- Suggestions will be populated here -->
+                            </div>
+                        </div>
+                        <div class="search-shortcut-hint">
+                            <kbd>Ctrl</kbd> + <kbd>K</kbd> to focus
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Navigation Items -->
+                <div class="navbar-nav">
+                    <!-- Filter Dropdown -->
                     <div class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                            <i class="bi bi-funnel me-1"></i>Filter
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="bi bi-funnel me-2"></i>
+                            <span>Filter Terms</span>
                         </a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu dropdown-menu-end">
                             <li><a class="dropdown-item" href="#" data-filter="all">All Terms</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="#" data-filter="n">Nouns (n)</a></li>
@@ -41,26 +87,20 @@
                             <li><a class="dropdown-item" href="#" data-filter="adv">Adverbs (adv)</a></li>
                         </ul>
                     </div>
-                </div>
-                
-                <div class="d-flex flex-grow-1 mx-3">
-                    <div class="input-group">
-                        <span class="input-group-text bg-white">
-                            <i class="bi bi-search text-muted"></i>
-                        </span>
-                        <input type="text" class="form-control" id="searchInput" placeholder="Search legal terms...">
-                        <button class="btn btn-outline-secondary" type="button" id="clearSearch">
-                            <i class="bi bi-x"></i>
-                        </button>
-                    </div>
-                </div>
-                
-                <div class="navbar-nav">
-                    <button class="btn btn-outline-light me-2" id="themeToggle">
-                        <i class="bi bi-moon-fill"></i>
+                    
+                    <!-- Action Buttons -->
+                    <button class="btn btn-outline-light btn-sm" id="themeToggle">
+                        <i class="bi bi-moon-fill me-1"></i>
+                        <span class="d-none d-lg-inline">Theme</span>
                     </button>
-                    <button class="btn btn-outline-light" id="downloadBtn" style="display: none;">
-                        <i class="bi bi-download me-1"></i>Export
+                    <!-- Add Term and Export buttons hidden -->
+                    <button class="btn btn-outline-light btn-sm" id="addTermBtn" style="display: none !important;">
+                        <i class="bi bi-plus-lg me-1"></i>
+                        <span class="d-none d-lg-inline">Add Term</span>
+                    </button>
+                    <button class="btn btn-outline-light btn-sm" id="downloadBtn" style="display: none !important;">
+                        <i class="bi bi-download me-1"></i>
+                        <span class="d-none d-lg-inline">Export</span>
                     </button>
                 </div>
             </div>
@@ -100,11 +140,6 @@
         </div>
     </main>
 
-    <!-- Floating Action Button -->
-    <button class="btn btn-primary rounded-circle position-fixed" id="addTermBtn" style="display: none; bottom: 20px; right: 20px; width: 60px; height: 60px; z-index: 1000;">
-        <i class="bi bi-plus fs-4"></i>
-    </button>
-
     <!-- Term Detail Modal -->
     <div class="modal fade" id="termDetailModal" tabindex="-1">
         <div class="modal-dialog modal-lg">
@@ -124,8 +159,18 @@
                             <span class="badge bg-primary" id="termDetailType"></span>
                         </div>
                     </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <h6 class="text-muted">Myanmar Word</h6>
+                            <p class="myanmar-text fs-5" id="termDetailMyanmar"></p>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="text-muted">Direction</h6>
+                            <span class="badge bg-secondary" id="termDetailDirection"></span>
+                        </div>
+                    </div>
                     <div class="mt-3">
-                        <h6 class="text-muted">Myanmar Definition</h6>
+                        <h6 class="text-muted">Definition</h6>
                         <p class="myanmar-text" id="termDetailDefinition"></p>
                     </div>
                     <div id="termDetailExample" style="display: none;">
@@ -247,7 +292,7 @@
     <!-- Bootstrap 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- CryptoJS for password hashing -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" integrity="sha512-E8QSvWZ0eCLGk4km3hxSsFnWWbr8TdCOu6QcF9nHdudwD1NRAp96gHY8eA2ZR3coC4QfX3WIGLgkJDQI2dWw6Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Custom JS -->
     <script src="app.js"></script>
 </body>

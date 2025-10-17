@@ -73,6 +73,17 @@ $(document).ready(function() {
     setTimeout(function() {
         initializeApp();
     }, 100);
+    
+    // Show hero section briefly for SEO, then hide it
+    setTimeout(function() {
+        const heroSection = document.getElementById('heroSection');
+        if (heroSection) {
+            heroSection.style.display = 'block';
+            setTimeout(function() {
+                heroSection.style.display = 'none';
+            }, 2000);
+        }
+    }, 500);
 });
 
 /**
@@ -125,6 +136,12 @@ async function loadDictionaryData() {
         showLoading(false);
         
         console.log(`Loaded ${dictionaryData.length} legal terms`);
+        
+        // Update page title with term count for SEO
+        updatePageTitle();
+        
+        // Generate dynamic meta tags for better SEO
+        generateDynamicMetaTags();
         
         // Fallback: force show terms after a short delay
         setTimeout(() => {
@@ -281,6 +298,9 @@ function handleSearch() {
         const query = elements.searchInput.value.toLowerCase().trim();
         filterTerms(query);
         showSearchSuggestions(query, 'desktop');
+        
+        // Track search query for SEO insights
+        trackSearchQuery(query);
     }, 150); // Reduced debounce for faster response
 }
 
@@ -293,6 +313,9 @@ function handleSearchMobile() {
         const query = elements.searchInputMobile.value.toLowerCase().trim();
         filterTerms(query);
         showSearchSuggestions(query, 'mobile');
+        
+        // Track search query for SEO insights
+        trackSearchQuery(query);
     }, 150); // Reduced debounce for faster response
 }
 
@@ -891,6 +914,77 @@ function getTypeClass(type) {
         'adv': 'adverb'
     };
     return typeMap[type.toLowerCase()] || 'primary';
+}
+
+/**
+ * Update page title with dynamic content for SEO
+ */
+function updatePageTitle() {
+    if (dictionaryData.length > 0) {
+        const termCount = dictionaryData.length;
+        document.title = `MyanLawLexicon - ${termCount.toLocaleString()} Myanmar-English Legal Terms Dictionary`;
+        
+        // Update meta description with term count
+        const metaDescription = document.querySelector('meta[name="description"]');
+        if (metaDescription) {
+            metaDescription.setAttribute('content', `Comprehensive Myanmar-English law dictionary with ${termCount.toLocaleString()}+ legal terms. Translate legal terminology between English and Myanmar languages. Free online legal dictionary for lawyers, students, and legal professionals.`);
+        }
+    }
+}
+
+/**
+ * Generate dynamic meta tags for search engines
+ */
+function generateDynamicMetaTags() {
+    // Add structured data for the dictionary content
+    const structuredData = {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Myanmar-English Law Dictionary Terms",
+        "description": `Collection of ${dictionaryData.length} legal terms in English and Myanmar`,
+        "url": window.location.href,
+        "mainEntity": {
+            "@type": "ItemList",
+            "numberOfItems": dictionaryData.length,
+            "itemListElement": dictionaryData.slice(0, 10).map((term, index) => ({
+                "@type": "ListItem",
+                "position": index + 1,
+                "item": {
+                    "@type": "DefinedTerm",
+                    "name": term.word,
+                    "description": term.definition,
+                    "inDefinedTermSet": "MyanLawLexicon"
+                }
+            }))
+        }
+    };
+    
+    // Remove existing structured data
+    const existingScript = document.querySelector('script[type="application/ld+json"]:last-of-type');
+    if (existingScript) {
+        existingScript.remove();
+    }
+    
+    // Add new structured data
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.textContent = JSON.stringify(structuredData);
+    document.head.appendChild(script);
+}
+
+/**
+ * Track search queries for analytics (SEO insights)
+ */
+function trackSearchQuery(query) {
+    if (query && query.length > 2) {
+        // This would integrate with Google Analytics or other analytics tools
+        console.log('Search query tracked:', query);
+        
+        // Update page title with search context
+        if (query) {
+            document.title = `"${query}" - MyanLawLexicon Myanmar-English Law Dictionary`;
+        }
+    }
 }
 
 /**

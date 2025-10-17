@@ -5,6 +5,11 @@
         "definition": "စွန့်ခွာသည်။ ပယ်ခွာသည်။"
     },
     {
+        "word": "abate",
+        "type": "v",
+        "definition": "ရပ်စဲသည်။ လျော့သည်။"
+    },
+    {
         "word": "abandonment",
         "type": "n",
         "definition": "လက်လွတ်လိုက်ခြင်း။ ပစ်ပယ်လိုက်ခြင်း။"
@@ -12,7 +17,7 @@
     {
         "word": "abase",
         "type": "v",
-        "definition": "နစ်နာစေသည်။ abate /v ရပ်စဲသည်။ လျော့သည်။"
+        "definition": "နစ်နာစေသည်။"
     },
     {
         "word": "abdicate",
@@ -47,7 +52,12 @@
     {
         "word": "abiding",
         "type": "adj",
-        "definition": "ခိုင်မာသော။ စွဲမြဲသော။ မဖျောက်ဖျက်နိုင်သော။ ability /n အစွမ်း။ စွမ်းရည်။ စွမ်းပကား။ တတ်နိုင်စွမ်း။ တတ်ကျွမ်းမှု။ အရည်အချင်း။"
+        "definition": "ခိုင်မာသော။ စွဲမြဲသော။ မဖျောက်ဖျက်နိုင်သော။"
+    },
+    {
+        "word": "ability",
+        "type": "n",
+        "definition": "အစွမ်း။ စွမ်းရည်။ စွမ်းပကား။ တတ်နိုင်စွမ်း။ တတ်ကျွမ်းမှု။ အရည်အချင်း။"
     },
     {
         "word": "abject",
@@ -70,7 +80,7 @@
         "definition": "ဖျက်သိမ်းသည်။ ရုပ်သိမ်းသည်။"
     },
     {
-        "word": "abolishion",
+        "word": "abolition",
         "type": "n",
         "definition": "ဖျက်သိမ်းခြင်း။"
     },
@@ -122,7 +132,17 @@
     {
         "word": "absent-mindedly",
         "type": "adv",
-        "definition": "အမှတ်တမဲ့။ အမှတ်မထင်။ absentee /n ပျက်ကွက်သူ။ absentee landlord /n အဝေးရောက်မြေရှင် W"
+        "definition": "အမှတ်တမဲ့။ အမှတ်မထင်။"
+    },
+    {
+        "word": "absentee",
+        "type": "n",
+        "definition": "ပျက်ကွက်သူ။"
+    },
+    {
+        "word": "absentee landlord",
+        "type": "n",
+        "definition": "အဝေးရောက်မြေရှင်။"
     },
     {
         "word": "absolute",
@@ -157,12 +177,17 @@
     {
         "word": "abstract",
         "type": "adj",
-        "definition": "စိတ်ကူးသက်သက်။ ယေဘုယျ (သဘော)။ abstract /n ကောက်နုတ်ချက်။"
+        "definition": "စိတ်ကူးသက်သက်။ ယေဘုယျ (သဘော)။"
     },
     {
         "word": "abstract",
         "type": "v",
         "definition": "ကောက်နုတ်သည်။ အကျဉ်းချူံးသည်။"
+    },
+    {
+        "word": "abstract",
+        "type": "n",
+        "definition": "ကောက်နုတ်ချက်။"
     },
     {
         "word": "absurdly",
@@ -202,7 +227,7 @@
     {
         "word": "acceptable",
         "type": "adj",
-        "definition": "လက်ခံနိုင်သော။ ယူနိုင်သော။ လက်သင့်ခံနိုင်သော။ acceptance /n (ဖိတ်ကြားချက် sas8[Gajo5 စသည်) လက်ခံခြင်း။ လက်သ်ခခြင်း၊ ဝင်ခွင့်ပြုခြင်း၊ ကြိုဆိုလက်ခခြင်း။"
+        "definition": "လက်ခံနိုင်သော။ ယူနိုင်သော။ လက်သင့်ခံနိုင်သော။"
     },
     {
         "word": "access",
@@ -217,7 +242,7 @@
     {
         "word": "accessory",
         "type": "n",
-        "definition": "(ပြစ်မှုကျူးလွန်ရာတွင်) အလိုတူအလိုပါ ll accessory after the fact ပြစ်မှုကျူးလွန်ပြီးနောက် ကူညီရိုင်းပင်းသူ။ accessory before the fact ပြစ်မှုကျူးလွန်မီ ကူညီရိုင်းပင်းသူ။ accident / 86075022008805 (ဒဏ်ရာရ) မှု။ တိုက်ဆိုင်မှု။ by accident /IDM] မတော်တဆ။"
+        "definition": "(ပြစ်မှုကျူးလွန်ရာတွင်) အလိုတူအလိုပါ။"
     },
     {
         "word": "accidental",
@@ -247,7 +272,7 @@
     {
         "word": "accompany",
         "type": "v",
-        "definition": "လိုက်ပါသည်။ accomplice /n (Bepolu"
+        "definition": "လိုက်ပါသည်။"
     },
     {
         "word": "accomplish",
@@ -257,7 +282,7 @@
     {
         "word": "accomplishment",
         "type": "n",
-        "definition": "ပြီးမြောက်ခြင်း၊ အောင်မြင်ခြင်း accord /n သဘောတူညီချက်။"
+        "definition": "ပြီးမြောက်ခြင်း၊ အောင်မြင်ခြင်း။"
     },
     {
         "word": "accord",
@@ -266,7 +291,7 @@
     },
     {
         "word": "accordance",
-        "type": "",
+        "type": "n",
         "definition": "နှင့်အညီ။"
     },
     {
@@ -281,17 +306,17 @@
     },
     {
         "word": "account",
-        "type": "",
+        "type": "n",
         "definition": "ငွေစာရင်း။"
     },
     {
         "word": "accountable",
         "type": "adj",
-        "definition": "တာဝန်ခံ (သော) accountability /n တာဝန်ခံမှု။ တာဝန်ရှိခြင်း။"
+        "definition": "တာဝန်ခံ (သော)။"
     },
     {
         "word": "accountant",
-        "type": "",
+        "type": "n",
         "definition": "စာရင် ကိုင် မို"
     },
     {
@@ -302,12 +327,12 @@
     {
         "word": "accredited",
         "type": "adj",
-        "definition": "orapro€e§.saSc02:6009 အသိအမှတ်ပြုထားသော။ accuracy /n ကျနမှန်ကန်မှု။ တိကျမှန်ကန်မှု။"
+        "definition": "အသိအမှတ်ပြုထားသော။ ခွင့်ပြုထားသော။"
     },
     {
         "word": "accurate",
         "type": "adj",
-        "definition": "မှန်ကန်တိကျသော။ အမှားကင်းသော။ accusation /n စွပ်စွဲချက်။ စွပ်စွဲသံ။ အပြစ်တင်သံ။"
+        "definition": "မှန်ကန်တိကျသော။ အမှားကင်းသော။"
     },
     {
         "word": "accuse",
@@ -357,7 +382,7 @@
     {
         "word": "actionable",
         "type": "adj",
-        "definition": "(onepiavesgS)[eg§:c0001| saegoesaagorecgosea00II"
+        "definition": "တရားစွဲဆိုနိုင်သော။ လုပ်ရပ်တစ်ခုကို တရားရုံးတွင် စွဲဆိုနိုင်သော။"
     },
     {
         "word": "activism",
@@ -421,13 +446,13 @@
     },
     {
         "word": "addressee",
-        "type": "",
+        "type": "n",
         "definition": "လိပ်စာရှင်။"
     },
     {
         "word": "adduce",
         "type": "v",
-        "definition": "သက်သေပြသည်။ adept /adj ကျွမ်းကျင်သော။"
+        "definition": "သက်သေပြသည်။"
     },
     {
         "word": "adhere",
@@ -436,12 +461,12 @@
     },
     {
         "word": "adherent",
-        "type": "",
+        "type": "n",
         "definition": "ထောက်ခံသူ။ နောက်လိုက်။"
     },
     {
         "word": "adherence",
-        "type": "",
+        "type": "n",
         "definition": "စွဲမြဲမှု။ ထိန်းသိမ်းလိုက်နာမှု။"
     },
     {
@@ -462,7 +487,7 @@
     {
         "word": "adjudicate",
         "type": "v",
-        "definition": "@6¢90:39:(6059095"
+        "definition": "တရားစီရင်သည်။ ဆုံးဖြတ်သည်။ စီရင်ဆုံးဖြတ်သည်။"
     },
     {
         "word": "adjudication",
@@ -476,7 +501,7 @@
     },
     {
         "word": "admin",
-        "type": "",
+        "type": "n",
         "definition": "အုပ်ချုပ်မှု။"
     },
     {
@@ -485,7 +510,7 @@
         "definition": "စီမံသည်။ ခန့်ခွဲသည်။ အုပ်ချုပ်သည်။ (တရား) စီရင်သည်။"
     },
     {
-        "word": "administeration",
+        "word": "administration",
         "type": "n",
         "definition": "စီမံခန့်ခွဲခြင်း။ အုပ်ချုပ်ရေး။ အုပ်ချုပ်မှု။ အစိုးရ။ စီရင်ခြင်း။"
     },
@@ -495,7 +520,7 @@
         "definition": "အုပ်ချုပ်မှုဆိုင်ရာ။ အုပ်ချုပ်ရေး။ စီမံခန့် ခွဲရေး။"
     },
     {
-        "word": "admissable",
+        "word": "admissible",
         "type": "adj",
         "definition": "လက်ခံနိုင်သော။ ခွင့်ပြုနိုင်သော။"
     },
@@ -532,16 +557,16 @@
     {
         "word": "adult",
         "type": "adj",
-        "definition": "အရွယ်ရောက်သော။ လူလားမြောက်သော။ (မဲပေးရန်၊ အိမ်ထောင်ပြုရန်) အရွယ်ရောက်သော။ adultery /n coécuSeg[sézu နောက်မီးလင်းခြင်း။ မယားနိုးမှု ကျူးလွန်ခြင်းစသော အိမ်ထောင်ရေးဖောက်ပြန်မှုနှင့် ခရစ်ယာန်တို့တွင် မယားငယ်ယူခြင်း။ ကာပပိုင်ရှိသူနှင့်"
+        "definition": "အရွယ်ရောက်သော။ လူလားမြောက်သော။ (မဲပေးရန်၊ အိမ်ထောင်ပြုရန်) အရွယ်ရောက်သော။"
     },
     {
         "word": "advance",
-        "type": "",
+        "type": "n",
         "definition": "ကြိုတင်ပေးငွေ။ စရန်။"
     },
     {
         "word": "advantage",
-        "type": "",
+        "type": "n",
         "definition": "အရေးသာမှု။ တစ်ပန်းသာမှု။ အသာစီး။ အကျိုး။ အမြတ်။ အသာ။ အကျိုးကျေးဇူး။"
     },
     {
@@ -557,7 +582,7 @@
     {
         "word": "adventitious",
         "type": "adj",
-        "definition": "မတော်တဆ (ဖြစ်သော)။ adversary /n ပြိုင်ဘက်။ ရန်ဘက်။ ရန်သူ။"
+        "definition": "မတော်တဆ (ဖြစ်သော)။"
     },
     {
         "word": "adverse",
@@ -575,7 +600,7 @@
         "definition": "ကြော်ငြာ။ ကြော်ငြာခြင်း။"
     },
     {
-        "word": "adverrising",
+        "word": "advertising",
         "type": "n",
         "definition": "ကြော်ငြာ (ခြင်း။ ကြော်ငြာလုပ်ငန်း။ advice / အကြံဉာဏ်။"
     },
@@ -595,7 +620,7 @@
         "definition": "အကြံပေး (ခွင့်ရှိသော)"
     },
     {
-        "word": "advoacy",
+        "word": "advocacy",
         "type": "v",
         "definition": "တရားရုံးရှေ့နေရာထူး။ advocate /v ထောက်ခံသည်။ ရှေ့နေလိုက်(ပြော)သည်။"
     },
@@ -611,7 +636,7 @@
     },
     {
         "word": "affidavit",
-        "type": "",
+        "type": "n",
         "definition": "ကျမ်းကျိန်လွာ။"
     },
     {
@@ -622,11 +647,16 @@
     {
         "word": "affirmative",
         "type": "adj",
-        "definition": "ဟုတ်ကြောင်း၊ မှန်ကြောင်း။ သအောချင်းကြိုက်ညကြောင်း ပြသသည်။ affray /n သတ်ပုတ်နှောင့်ယှက်မှု။"
+        "definition": "ဟုတ်ကြောင်း၊ မှန်ကြောင်း။ သအောချင်းကြိုက်ညကြောင်း ပြသသည်။"
+    },
+    {
+        "word": "affray",
+        "type": "n",
+        "definition": "သတ်ပုတ်နှောင့်ယှက်မှု။"
     },
     {
         "word": "affront",
-        "type": "",
+        "type": "n",
         "definition": "စော်ကားမှု။"
     },
     {
@@ -640,7 +670,7 @@
         "definition": "တင်ကူးကြံရွယ်ချက်။"
     },
     {
-        "word": "afortiori",
+        "word": "a fortiori",
         "type": "adv",
         "definition": "$88 Ecdeaora0e[ar2E:e[a3E | afterthought /n နောက်မှရသောအကြံ။"
     },
@@ -656,18 +686,23 @@
     },
     {
         "word": "age",
-        "type": "",
+        "type": "n",
         "definition": "အသက်။ အရွယ်။ အသက်အရွယ်။ သက်တမ်း။"
     },
     {
         "word": "under age",
         "type": "n",
-        "definition": "[IDM] 3209036(Ga$e00:609011 agency / ကိုယ်စားလှယ်လုပ်ငန်း။"
+        "definition": "[IDM] လူငယ်အရွယ်။ အရွယ်မရောက်သေးသော။"
     },
     {
         "word": "agenda",
         "type": "n",
         "definition": "အစည်းအဝေးအစီအစဉ်။ လုပ်ငန်းစဉ်။ agent / ကိုယ်စားလှယ်။"
+    },
+    {
+        "word": "agency",
+        "type": "n",
+        "definition": "ကိုယ်စားလှယ်လုပ်ငန်း။ အေဂျင်စီ။ ကိုယ်စားလှယ်အဖွဲ့။"
     },
     {
         "word": "aggravate",
@@ -702,7 +737,7 @@
     {
         "word": "ahead",
         "type": "adv",
-        "definition": "ရှေ့တည့်တည့်။ ရှေ့သို့။ ရှေ့တွင်။ ရှေ့မှ။ ရှေ့လျှောက်။ aid/n အကူအညီ။ အထောက်အကူ။ 396000053390 I ထောက်ပံ့မှု။"
+        "definition": "ရှေ့တည့်တည့်။ ရှေ့သို့။ ရှေ့တွင်။ ရှေ့မှ။ ရှေ့လျှောက်။ aid အကူအညီ။ အထောက်အကူ။ ထောက်ပံ့မှု။"
     },
     {
         "word": "aim",
@@ -712,17 +747,17 @@
     {
         "word": "alcoholic",
         "type": "adj",
-        "definition": "zaqosvloéeoon1l Saqoseaooreoo05 on:g6(0326(4Se0901 alias /n နာမည်ပွား။ [၂ အခင်းဖြစ်ပွားရာနေရာတွင် အမှုဖြစ်ချိန်၌ မရှိဘဲ အခြားတွင် ရှိကြောင်း ထုချေချက်။ ဆင်ခြေ။"
+        "definition": "အရက်သောက်သော။ အရက်စွဲသော။ alias နာမည်ပွား။ အခင်းဖြစ်ပွားရာနေရာတွင် အမှုဖြစ်ချိန်၌ မရှိဘဲ အခြားတွင် ရှိကြောင်း ထုချေချက်။ ဆင်ခြေ။"
     },
     {
         "word": "alimony",
-        "type": "",
+        "type": "adj",
         "definition": "မယားစရိတ်။"
     },
     {
         "word": "alive",
         "type": "adj",
-        "definition": "3990039 (6000) ရှင်(သော)။ အသက်ရှင်လျက်ရှိ(သော)။"
+        "definition": "ရှင်(သော)။ အသက်ရှင်လျက်ရှိ(သော)။"
     },
     {
         "word": "allegation",
@@ -737,7 +772,7 @@
     {
         "word": "allocate",
         "type": "v",
-        "definition": "Geo2205go3a095!| ခန့်ခွဲသည်။ allocation /n ခွဲဝေပေးခြင်း။ ခွဲဝေချထားပေးသည့်ပမာဏ။ (ဘဏ္ဍာရေး) သတ်မှတ်ချက်။"
+        "definition": "ခန့်ခွဲသည်။ allocation ခွဲဝေပေးခြင်း။ ခွဲဝေချထားပေးသည့်ပမာဏ။ (ဘဏ္ဍာရေး) သတ်မှတ်ချက်။"
     },
     {
         "word": "allot",
@@ -756,7 +791,7 @@
     },
     {
         "word": "allowance",
-        "type": "",
+        "type": "n",
         "definition": "ပုံမှန်ခွင့်ပြု၊ ပေးအပ်သောအရာ။ အထူးသဖြင့် ငွေကြေး၏ ပမာဏ။ ထောက်ပံ့ကြေး။ စရိတ်။ မုန့် ဖိုး။ ခွင့်ပြုချက်။"
     },
     {
@@ -792,7 +827,7 @@
     {
         "word": "alternate",
         "type": "adj",
-        "definition": "(နှစ်ခု၊ နစ်ရပ်)။ တစ်ခုခြား 02600881 02602§ စီရှိသော။ တစ်လှည့်စီဖြစ်သော။"
+        "definition": "(နှစ်ခု၊ နှစ်ရပ်) တစ်ခုခြား စီရှိသော။ တစ်လှည့်စီဖြစ်သော။ အစားထိုးနိုင်သော။"
     },
     {
         "word": "alternation",
@@ -802,7 +837,7 @@
     {
         "word": "alternative",
         "type": "adj",
-        "definition": "အခြားသော။ 2900§:03100905¢2001I"
+        "definition": "အခြားသော။ အစားထိုးနိုင်သော။"
     },
     {
         "word": "alternative",
@@ -857,7 +892,7 @@
     {
         "word": "amoral",
         "type": "adj",
-        "definition": "Rosaysoren:aré:Gea2oI"
+        "definition": "ကျင့်ဝတ်မရှိသော။ ကိုယ်ကျင့်တရားမရှိသော။"
     },
     {
         "word": "amortize",
@@ -866,7 +901,7 @@
     },
     {
         "word": "amphetamine",
-        "type": "",
+        "type": "n",
         "definition": "စိတ်ကြွဆေး။"
     },
     {
@@ -880,8 +915,8 @@
         "definition": "ဆင်တူယိုးမှားဖြစ်သော။ အလားတူသော။"
     },
     {
-        "word": "analsis",
-        "type": "",
+        "word": "analysis",
+        "type": "n",
         "definition": "စိစစ်ချက်။ စိတ်ဖြာလေ့လာချက်။"
     },
     {
@@ -901,7 +936,7 @@
     },
     {
         "word": "ancestry",
-        "type": "",
+        "type": "adj",
         "definition": "မျိုးရိုး။"
     },
     {
@@ -921,7 +956,7 @@
     },
     {
         "word": "anniversary",
-        "type": "",
+        "type": "adj",
         "definition": "နှစ်ပတ်လည်နေ့။ ... နှစ်မြောက် နှစ်ပတ်လည်နေ့။"
     },
     {
@@ -985,9 +1020,9 @@
         "definition": "ရန်ဘက် il"
     },
     {
-        "word": "antagonisitic",
+        "word": "antagonistic",
         "type": "adj",
-        "definition": "ရန်မူလိုသော။ 20§,0yEc8ea9011"
+        "definition": "ရန်မူလိုသော။ ဆန့်ကျင်သော။ ရန်ဖြစ်လိုသော။"
     },
     {
         "word": "antagonize",
@@ -1012,17 +1047,17 @@
     {
         "word": "antique",
         "type": "adj",
-        "definition": "|g 207}024S:(68:699911"
+        "definition": "ရှေးဟောင်းသော။ ရှေးခေတ်က ပစ္စည်း။"
     },
     {
         "word": "antique",
-        "type": "",
+        "type": "n",
         "definition": "ရှေးဟောင်းပစ္စည်း။"
     },
     {
         "word": "antisocial",
         "type": "adj",
-        "definition": "©9,03:096:9 6303.03 ချိုးဖောက်သော။ လူမှုရေးခေါင်းပါးသော။ antithesis /n ပကတိဆန့် ကျင်ဘက်။ ပြောင်းပြန်ဖြစ်သော။ ဆန့်ကျင်ဘက်။"
+        "definition": "ချိုးဖောက်သော။ လူမှုရေးခေါင်းပါးသော။ antithesis ပကတိဆန့်ကျင်ဘက်။ ပြောင်းပြန်ဖြစ်သော။ ဆန့်ကျင်ဘက်။"
     },
     {
         "word": "apartment",
@@ -1051,7 +1086,7 @@
     },
     {
         "word": "apparatus",
-        "type": "",
+        "type": "n",
         "definition": "ကိရိယာ။ တန်ဆာပလာ။ ပစ္စည်း။"
     },
     {
@@ -1091,7 +1126,7 @@
     },
     {
         "word": "appliance",
-        "type": "",
+        "type": "n",
         "definition": "ကိရိယာ။ တန်ဆာပလာ။ ပစ္စည်း။ အသုံးအဆောင်။"
     },
     {
@@ -1150,13 +1185,13 @@
         "definition": "ရာပြတ်။"
     },
     {
-        "word": "apprenhend",
+        "word": "apprehend",
         "type": "v",
         "definition": "(ရဲက) ဖမ်းသည်။ ဖမ်းမိသည်။ သဘောပေါက်သည်။ နားလည်သည်။"
     },
     {
         "word": "apprentice",
-        "type": "",
+        "type": "n",
         "definition": "အလုပ်သင်။"
     },
     {
@@ -1212,11 +1247,11 @@
     {
         "word": "arbitration",
         "type": "n",
-        "definition": "§ 222028 yEst[Gorfoernda0008(GE8qEap:(G05 (9 ¢ +1 arbitrator /n အနုညာတ ခုံလူကြီး။ ခုံသမာဓိ။ ခုံသမတ်။ are/n စတုရန်းမီတာ ၁၀၀။"
+        "definition": "ခုံသမာဓိစီရင်ခြင်း။ အနုညာတစီရင်ခြင်း။ arbitrator အနုညာတ ခုံလူကြီး။ ခုံသမာဓိ။ ခုံသမတ်။ are စတုရန်းမီတာ ၁၀၀။"
     },
     {
         "word": "area",
-        "type": "",
+        "type": "n",
         "definition": "အကျယ်အဝန်းပမာဏ။ ဧရိယာ။ နယ်မြေ။ ဒေသ။ အပိုင်း။ နေရာအပိုင်းအခြား။ နယ်ပယ်။ ကဏ္ဍ။ အပိုင်း။"
     },
     {
@@ -1226,13 +1261,13 @@
     },
     {
         "word": "arms",
-        "type": "",
+        "type": "n",
         "definition": "လက်နက်။"
     },
     {
         "word": "arraign",
         "type": "v",
-        "definition": "CSgoryseg§e{arré:orqp:0€ gS g2005 ရုံတင်သည်။"
+        "definition": "ရုံတင်သည်။ တရားရုံးတွင် စွဲဆိုသည်။"
     },
     {
         "word": "arrange",
@@ -1246,13 +1281,13 @@
     },
     {
         "word": "arrears",
-        "type": "",
+        "type": "n",
         "definition": "ကြွေးကျန်။"
     },
     {
         "word": "arrest",
         "type": "v",
-        "definition": "ဖမ်းဆီးသည်။ ရပ်စေသည်။ တန့်စေသည်။ arrest /n ဖမ်းဆီးခြင်း။ s206:3088:q500§ ခြင်း။"
+        "definition": "ဖမ်းဆီးသည်။ ရပ်စေသည်။ တန့်စေသည်။ arrest ဖမ်းဆီးခြင်း။"
     },
     {
         "word": "arrival",
@@ -1352,7 +1387,7 @@
     {
         "word": "associate",
         "type": "v",
-        "definition": "§:goS{opaSaop5u aondad{apasaop5u ယှဉ်ကြည့်သည်။ associate/ n စပ်တူလုပ်ဖက်။ လုပ်ဖော်ကိုင်ဖက်။ သင်္ဂဟအသင်းဝင်။"
+        "definition": "ယှဉ်ကြည့်သည်။ ဆက်နွယ်သည်။ associate စပ်တူလုပ်ဖက်။ လုပ်ဖော်ကိုင်ဖက်။ သင်္ဂဟအသင်းဝင်။"
     },
     {
         "word": "association",
@@ -1381,7 +1416,7 @@
     },
     {
         "word": "asylum",
-        "type": "",
+        "type": "n",
         "definition": "(နိုင်ငံရေး) ခိုလုံခွင့်။"
     },
     {
@@ -1406,7 +1441,7 @@
     },
     {
         "word": "attache",
-        "type": "",
+        "type": "n",
         "definition": "သံမှူး။"
     },
     {
@@ -1445,7 +1480,7 @@
         "definition": "မှန်ကန်ကြောင်း ထောက်ခံသည်။ သက်သေပြုသည်။"
     },
     {
-        "word": "attitide",
+        "word": "attitude",
         "type": "n",
         "definition": "သဘောထား။ attorney / ရှေ့နေ။ အကျိုးဆောင်ကိုယ်စားလှယ်ရှေ့နေ။ attprney-general / ရှေ့နေချုပ်။"
     },
@@ -1526,7 +1561,7 @@
     },
     {
         "word": "avenue",
-        "type": "",
+        "type": "adj",
         "definition": "ရိပ်သာလမ်း။ အိမ်ကြီးတစ်အိမ်သို့ ဦးတည်သောလမ်းသွယ်။ လမ်း။ လမ်းကြောင်း။"
     },
     {
@@ -1536,7 +1571,7 @@
     },
     {
         "word": "average",
-        "type": "",
+        "type": "n",
         "definition": "ပျမ်းမျှ။ ကြိတ်နှုန်း။ ပုံမှန်စံနှုန်း။"
     },
     {
@@ -1565,13 +1600,13 @@
         "definition": "ရှင်းရှင်း။ ဘွင်းဘွင်း။"
     },
     {
-        "word": "baward",
+        "word": "award",
         "type": "v",
         "definition": "ချီးမြှင့်သည်။ ဆုပေးသည်။ award /n ချီးမြှင့်ရန်ဆုံးဖြတ်မှုူ။ ဆုကြေး။ လျော်ကြေး။ B bachelor /n လူပျို"
     },
     {
         "word": "backing",
-        "type": "",
+        "type": "n",
         "definition": "အထောက်အပံ့။ နောက်ခံ။"
     },
     {
@@ -1591,7 +1626,7 @@
     },
     {
         "word": "bail",
-        "type": "",
+        "type": "n",
         "definition": "အာမခံငွေ။"
     },
     {
@@ -1616,7 +1651,7 @@
     },
     {
         "word": "balance sheet",
-        "type": "",
+        "type": "n",
         "definition": "ငွေလက်ကျန်ရှင်းတမ်း။ ငွေစာရင်း ရှင်းတမ်း။"
     },
     {
@@ -1631,7 +1666,7 @@
     },
     {
         "word": "bane",
-        "type": "",
+        "type": "n",
         "definition": "ဒုက္ခပေးသောအရာ။ ပြဿနာ။"
     },
     {
@@ -1646,7 +1681,7 @@
     },
     {
         "word": "bank",
-        "type": "",
+        "type": "n",
         "definition": "ဘဏ်။"
     },
     {
@@ -1656,18 +1691,18 @@
     },
     {
         "word": "bank draft",
-        "type": "",
+        "type": "n",
         "definition": "ဘဏ်ငွေလွဲစာ။"
     },
     {
         "word": "banking",
-        "type": "",
+        "type": "n",
         "definition": "ဘဏ်လုပ်ငန်း။"
     },
     {
         "word": "bank rate",
-        "type": "",
-        "definition": "nevss9084 $21"
+        "type": "v",
+        "definition": "ဘဏ်အတိုးနှုန်း။ ဘဏ်ကြေးနှုန်း။"
     },
     {
         "word": "bank statement",
@@ -1711,7 +1746,7 @@
     },
     {
         "word": "basics",
-        "type": "",
+        "type": "n",
         "definition": "အရင်းခံ။"
     },
     {
@@ -1746,12 +1781,12 @@
     },
     {
         "word": "belonging",
-        "type": "",
+        "type": "v",
         "definition": "(ရွှေ့ပြောင်းနိုင်သော) ပိုင်ဆိုင်ပစ္စည်း။"
     },
     {
         "word": "benefit",
-        "type": "",
+        "type": "v",
         "definition": "အကျိုးကျေးဇူး။ အကျိုးအမြတ်။ အနစိုးရထောက်ပံ့ကြေး။ ရန်ပုံငွေအလျူပွဲ။"
     },
     {
@@ -1826,17 +1861,17 @@
     },
     {
         "word": "bill of exchange",
-        "type": "",
+        "type": "n",
         "definition": "ဖော်ပြသည့်နေ့ရက်၌ ဖော်ပြပါပုဂ္ဂိုလ်အား egopodeurg§! အမိန့်စာလွာ။"
     },
     {
         "word": "bill of lading",
-        "type": "",
+        "type": "n",
         "definition": "သင်္ဘောပါကုန်အသေးစိတ်စာရင်း။"
     },
     {
         "word": "bill of sale",
-        "type": "",
+        "type": "n",
         "definition": "ပဂ္ဂလိကပိုင်ပစ္စည်းရောင်းချမှုဆိုင်ရာ တရားဝင်စာရွက်စာတမ်း"
     },
     {
@@ -1847,7 +1882,7 @@
     {
         "word": "black mark",
         "type": "n",
-        "definition": "မဲ့တစ်ပေါက်။ အမည်းစက်။ black market /n |egreSeqyi မှောင်ခို။"
+        "definition": "မဲ့တစ်ပေါက်။ အမည်းစက်။ black market မှောင်ခို။"
     },
     {
         "word": "black marketeer",
@@ -1856,7 +1891,7 @@
     },
     {
         "word": "black spot",
-        "type": "",
+        "type": "adj",
         "definition": "မတော်တဆထိခိုက်မှု မကြာခဏဖြစ်တတ်သည့်နေရာ။ လူစားသောနေရာ။ပြဿနာတစ်စုံတစ်ခု ကျယ်ကျယ်ပြန့်ပြန့် ဖြစ်ပွားရာအရပ်။"
     },
     {
@@ -1877,7 +1912,7 @@
     {
         "word": "blackmail",
         "type": "v",
-        "definition": "ခြိမ်းခြောက်အကျပ်ကိုင်သည်။ blackmailer /n wEsagoyitog§op i blame /v အပြစ်ဖို့သည်။ လွှဲချသည်။"
+        "definition": "ခြိမ်းခြောက်အကျပ်ကိုင်သည်။ blackmailer ခြိမ်းခြောက်သူ။ blame အပြစ်ဖို့သည်။ လွှဲချသည်။"
     },
     {
         "word": "blank",
@@ -1901,12 +1936,12 @@
     },
     {
         "word": "blood",
-        "type": "",
+        "type": "n",
         "definition": "သွေး။ မျိုးရိုး။ မျိုးနွယ်။"
     },
     {
         "word": "blood bank",
-        "type": "",
+        "type": "n",
         "definition": "693299005"
     },
     {
@@ -1926,12 +1961,12 @@
     },
     {
         "word": "blood-letting",
-        "type": "",
+        "type": "n",
         "definition": "သွေးထွက်သံယိုဖြစ်မှု။"
     },
     {
         "word": "blood-money",
-        "type": "",
+        "type": "adj",
         "definition": "အသတ်ခံရသူ၏ မိသားစုအတွက် လျော်ကြေး။"
     },
     {
@@ -1971,11 +2006,11 @@
     },
     {
         "word": "bomb",
-        "type": "",
+        "type": "n",
         "definition": "ဗုံး။ ဗုံးဆင်ထားသောအရာ။ အဏုမြူ ဟိုက်ဒြိုဂျင်လက်နက်။"
     },
     {
-        "word": "bombrad",
+        "word": "bombard",
         "type": "v",
         "definition": "ဗုံးကြဲတိုက်ခိုက်သည်။ အမြောက်ကြီးများဖြင့် ပစ်ခတ် တိုက်ခိုက်သည်။ တရစပ်ထိုးနှက်သည်။"
     },
@@ -1986,7 +2021,7 @@
     },
     {
         "word": "bona fides",
-        "type": "",
+        "type": "adj",
         "definition": "ရိုးသားဖြောင့်မှန်သော ရည်ရွယ်ချက်။"
     },
     {
@@ -2000,7 +2035,7 @@
         "definition": "ကြိုတင် နေရာယူသည်။ ကြိတင်လက်မှတ်ယူသည်။ ကြိုတင်နေရာ၊ လက်မှတ်စသည် လုပ်ထားပေးသည်။"
     },
     {
-        "word": "bookeeper",
+        "word": "bookkeeper",
         "type": "n",
         "definition": "စာရင်းကိုင်။"
     },
@@ -2011,7 +2046,7 @@
     },
     {
         "word": "borderline",
-        "type": "",
+        "type": "n",
         "definition": "နယ်သတ်မျဉ်း။"
     },
     {
@@ -2026,7 +2061,7 @@
     },
     {
         "word": "boundary",
-        "type": "",
+        "type": "adj",
         "definition": "နယ်သတ်မျဉ်း။ နယ်နိမိတ်။"
     },
     {
@@ -2041,7 +2076,7 @@
     },
     {
         "word": "brand name",
-        "type": "",
+        "type": "n",
         "definition": "ကုန်တံဆိပ်အမည်။"
     },
     {
@@ -2056,7 +2091,7 @@
     },
     {
         "word": "breadth",
-        "type": "",
+        "type": "n",
         "definition": "အနံ။ ဗြက်။ အကျယ်အဝန်း။"
     },
     {
@@ -2081,7 +2116,7 @@
     },
     {
         "word": "bridegroom",
-        "type": "",
+        "type": "n",
         "definition": "သတို့သား။ အသင့်ပြင်ဆင်ပေးသည့် အမှုဆိုင်ရာ အချက်အလက် အချုပ်။"
     },
     {
@@ -2116,7 +2151,7 @@
     },
     {
         "word": "burden",
-        "type": "",
+        "type": "adj",
         "definition": "ဝန်ထုပ်ဝန်ပိုး။"
     },
     {
@@ -2126,12 +2161,12 @@
     },
     {
         "word": "bureaucrat",
-        "type": "",
+        "type": "n",
         "definition": "ဗျူရို ရက်အရာရှိ။"
     },
     {
         "word": "burglar",
-        "type": "",
+        "type": "n",
         "definition": "ဖောက်ထွင်းသူခိုး။"
     },
     {
@@ -2412,7 +2447,7 @@
     {
         "word": "charge-sheet",
         "type": "n",
-        "definition": "ရဲအမှုတွဲမှတ်တမ်း။ စွဲချက်လွာ။ charter / လုပ်ပိုင်ခွင့်၊ qSEgégp:03 oreproéews{Gaor:ea02 စာရမ်း။ 089905000262"
+        "definition": "ရဲအမှုတွဲမှတ်တမ်း။ စွဲချက်လွာ။ charter လုပ်ပိုင်ခွင့်။ စာရမ်း။"
     },
     {
         "word": "charter",
@@ -2481,7 +2516,7 @@
     },
     {
         "word": "choice",
-        "type": "",
+        "type": "n",
         "definition": "ရွေးချယ်မှု။ ရွေးရန်အခွင့်အလမ်း။ ရွေးချယ်စရာ။"
     },
     {
@@ -2511,7 +2546,7 @@
     },
     {
         "word": "city-state",
-        "type": "",
+        "type": "v",
         "definition": "မြို့ပြနိုင်ငံ။"
     },
     {
@@ -2522,7 +2557,7 @@
     {
         "word": "civil disobedience",
         "type": "n",
-        "definition": "(GaSap,a0g[o[Sézu သပိတ်မှောက်ခြင်း။"
+        "definition": "အရပ်သားမနာခံမှု။ သပိတ်မှောက်ခြင်း။"
     },
     {
         "word": "civil liberty",
@@ -2557,16 +2592,16 @@
     {
         "word": "clansman",
         "type": "v",
-        "definition": "မျိုးနွယ်ဝင်။ gocseqqpediong အဘိဓာနိ-၃၆ clash / gExsEo3a53 0520051 အချင်းဖြစ်ပွားသည်။ တိုက်ဆိုင်နေသည်။ တစ်ခုနှင့်တစ်ခုမလိုက်ဖက်။"
+        "definition": "မျိုးနွယ်ဝင်။ clash အချင်းဖြစ်ပွားသည်။ တိုက်ဆိုင်နေသည်။ တစ်ခုနှင့်တစ်ခုမလိုက်ဖက်။"
     },
     {
         "word": "clash",
-        "type": "",
+        "type": "n",
         "definition": "ဆော်ပွဲနှက်ပွဲ။ ထိပ်တိုက်ဖြစ်မှ။ ဆန့်ကျင်မှု။"
     },
     {
         "word": "class",
-        "type": "",
+        "type": "n",
         "definition": "လူတန်းစား၊ အလွာ၊ လူတန်းစားခွဲခြားမှုစနစ်၊ အဆင့် အတန်း အလွှာ။ (ဘာသာရပ်) သင်တန်း။"
     },
     {
@@ -2581,7 +2616,7 @@
     },
     {
         "word": "class struggle",
-        "type": "",
+        "type": "n",
         "definition": "လူတန်းစားတိုက်ပွဲ။"
     },
     {
@@ -2615,7 +2650,7 @@
         "definition": "စာရေး။ client / အမှုသည်။ (ဘဏ်တွင်အပ်နေကျ) ဖောက်သည်။ clink / ထောင်။ clique / အုပ်စု၊ ဂိုဏ်း။"
     },
     {
-        "word": "cliquy",
+        "word": "cliquey",
         "type": "adj",
         "definition": "ဂိုဏ်းဂဏစိတ်ရှိသော။ အုပ်စုဖွဲ့လိုသော။ အံစနှင့်ခြမ်လှယ်သော။ club/n အသင်း။ ကလပ်။ အသင်းတိုက်။"
     },
@@ -2631,7 +2666,7 @@
     },
     {
         "word": "coercion",
-        "type": "",
+        "type": "n",
         "definition": "အကျပ်ကိုင်မှု။"
     },
     {
@@ -2656,7 +2691,7 @@
     },
     {
         "word": "coincidence",
-        "type": "",
+        "type": "n",
         "definition": "တိုက်ဆိုင်မှု။"
     },
     {
@@ -2680,7 +2715,7 @@
         "definition": "ပူးပေါင်းဆောင်ရွက်သော။"
     },
     {
-        "word": "coliect",
+        "word": "collect",
         "type": "v",
         "definition": "စုသည်။ သိမ်းသည်။ စုဝေးသည်။ ကောက်ခံသည်။"
     },
@@ -2740,18 +2775,18 @@
         "definition": "ပေါင်းစပ်သည်။ တွဲထားသည်။"
     },
     {
-        "word": "cpmmander",
+        "word": "commander",
         "type": "n",
         "definition": "အုပ်ချုပ်သူအရာရှိ။ တပ်မှူး။"
     },
     {
         "word": "commando",
-        "type": "",
+        "type": "n",
         "definition": "အထူးတပ်ဖွဲ့။ ကွန်မန်ဒိုအဖွဲ့။"
     },
     {
         "word": "commerce",
-        "type": "",
+        "type": "n",
         "definition": "ကုန်သွယ်မှု။"
     },
     {
@@ -2826,11 +2861,11 @@
     },
     {
         "word": "compatriot",
-        "type": "",
+        "type": "n",
         "definition": "တစ်ပြည်တည်းသား။ တစ်နယ်တည်းသား။"
     },
     {
-        "word": "comple",
+        "word": "compel",
         "type": "v",
         "definition": "အတင်းအကျပ်ခိုင်းသည်။ မဖြစ်မနေလုပ်စေသည်။ အကျပ်ကိုင်သည်။"
     },
@@ -2931,11 +2966,11 @@
     },
     {
         "word": "confederacy",
-        "type": "",
+        "type": "n",
         "definition": "မဟာမိတ်နိုင်ငံ များအဖွဲ့။ နိုင်ငံများသမဂ္ဂ။"
     },
     {
-        "word": "confderate",
+        "word": "confederate",
         "type": "adj",
         "definition": "သဘောတူစာချုပ်ဖြင့် ပေါင်းဖွဲ့ထားသော။"
     },
@@ -2946,7 +2981,7 @@
     },
     {
         "word": "conference",
-        "type": "",
+        "type": "n",
         "definition": "ညိနှိုင်းဆွေးနွေးပွဲ။ ညီလာခံ။"
     },
     {
@@ -2976,7 +3011,7 @@
     },
     {
         "word": "confines",
-        "type": "",
+        "type": "n",
         "definition": "အကန့်အသတ်။ ဘောင်။ နယ်နိမိတ်။"
     },
     {
@@ -3011,12 +3046,12 @@
     },
     {
         "word": "conglomerate",
-        "type": "",
+        "type": "v",
         "definition": "စီးပွားရေးလုပ်ငန်းများစွာကို ပူးပေါင်း တည်ထောင်ထား သော ကော်ပိုရေးရှင်းကြီး။"
     },
     {
         "word": "congress",
-        "type": "",
+        "type": "n",
         "definition": "ညီလာခံ။"
     },
     {
@@ -3067,7 +3102,7 @@
     {
         "word": "consequential",
         "type": "adj",
-        "definition": "conde €:zacgj:{g6eo001 conservative/ adj ရှေးရိုးစွဲ။ ရှေးဆန်းသော။ gocsequpediong အဘိဓာနိ-၄၃ the Conservative Party/n ဗြိတိသျှနိုင်ငံရေး ပါတီကြီးများအနက် လွတ်လပ်စွာ ကုန်သွယ်ခွန် ပုဂ္ဂလိကပိုင်ဆိုင်မှုကို လိုလားထောက်ခံ သော ပါတီကြီး။"
+        "definition": "အကျိုးဆက်ဖြစ်သော။ နောက်ဆက်တွဲဖြစ်သော။ conservative ရှေးရိုးစွဲ။ ရှေးဆန်းသော။ the Conservative Party ဗြိတိသျှနိုင်ငံရေး ပါတီကြီးများအနက် လွတ်လပ်စွာ ကုန်သွယ်ခွန် ပုဂ္ဂလိကပိုင်ဆိုင်မှုကို လိုလားထောက်ခံ သော ပါတီကြီး။"
     },
     {
         "word": "consider",
@@ -3117,7 +3152,7 @@
     {
         "word": "constructive",
         "type": "adj",
-        "definition": "အပြုသဘောဆောင်သော။ construe/ v garcopSaop5i1_39g05398g20Sear205079098 I consul /n ကောင်စစ်ဝန်ရုံး။"
+        "definition": "အပြုသဘောဆောင်သော။ construe အနက်ဖွင့်သည်။ ရှင်းပြသည်။ consul ကောင်စစ်ဝန်ရုံး။"
     },
     {
         "word": "consult",
@@ -3126,12 +3161,12 @@
     },
     {
         "word": "consultant",
-        "type": "",
+        "type": "n",
         "definition": "အတိုင်ပင်ခံပုဂ္ဂိုလ်။"
     },
     {
-        "word": "consultaion",
-        "type": "",
+        "word": "consultation",
+        "type": "n",
         "definition": "အကြံဉာဏ်ရယူမူ။ ညှိနင်းတိုင်ပင်မှု။"
     },
     {
@@ -3246,7 +3281,7 @@
     },
     {
         "word": "controversy",
-        "type": "",
+        "type": "adj",
         "definition": "မကျေနပ်မှ။ အငြင်းပွားမှု။ အငြင်းပွားစရာ။"
     },
     {
@@ -3266,7 +3301,7 @@
     },
     {
         "word": "conveyance",
-        "type": "",
+        "type": "n",
         "definition": "ပိုင်ဆိုင်ခွင့် တရားဝင်လွဲပြောင်းပေးအပ်မှုလုပ်ငန်းစဉ်။ ပစ္စည်းလွဲပြောင်းစာချပ်။"
     },
     {
@@ -3286,7 +3321,7 @@
     },
     {
         "word": "co-op",
-        "type": "",
+        "type": "n",
         "definition": "သမ၊ သမဝါယမ။"
     },
     {
@@ -3297,7 +3332,7 @@
     {
         "word": "cooperative",
         "type": "adj",
-        "definition": "vloég:ev] E:ea02E gode2001| ဖက်စပ်။"
+        "definition": "ပူးပေါင်းဆောင်ရွက်သော။ ဖက်စပ်။"
     },
     {
         "word": "cooperative",
@@ -3346,11 +3381,11 @@
     },
     {
         "word": "correspondence",
-        "type": "",
+        "type": "n",
         "definition": "တစ်ခုနှင့်တစ်ခုဆက်နွယ်မူ၊ အလားတူမှု။ စာအဆက်အသွယ်။"
     },
     {
-        "word": "cprrespondent",
+        "word": "correspondent",
         "type": "n",
         "definition": "သတင်းထောက်။ စာရေးသားဆက်သွယ်သူ။"
     },
@@ -3390,13 +3425,13 @@
         "definition": "တန်ဖိုးငွေ။ ကျသင့်ငွေ။ တရားစရိတ်။ councli / ဒေသန္တ ရအုပ်ချုပ်ရေးအဖွဲ့။ ကောင်စီ။ အကြံပေးအဖွဲ့။ အတိုင်ပင်ခံအဖွဲ့။"
     },
     {
-        "word": "counsle",
+        "word": "counsel",
         "type": "n",
         "definition": "ဩဝါဒ။ အကြံဉာဏ်။ အမှုအခင်းတစ်ခုတွင် လိုက်ပါ ဝတ်လုံတော်ရရှေ့နေ၊ တရားရုံးချုပ်ရှေ့နေ။ အကြံပြု သည်။ အကြံပေးသည်။"
     },
     {
         "word": "counselling",
-        "type": "",
+        "type": "n",
         "definition": "(ကျွမ်းကျင်သူတို့၏) ဆွေးနွေးလမ်းညြွန်မှု။"
     },
     {
@@ -3431,11 +3466,11 @@
     },
     {
         "word": "counter-claim",
-        "type": "",
+        "type": "n",
         "definition": "တန်ပြန် တောင်းဆိုချက်။"
     },
     {
-        "word": "courter-espionage",
+        "word": "counter-espionage",
         "type": "n",
         "definition": "တန်ပြန် ထောက်လှမ်းခြင်း။"
     },
@@ -3491,7 +3526,7 @@
     },
     {
         "word": "credibility gap",
-        "type": "",
+        "type": "n",
         "definition": "အဖြစ်မှန်နှင့်သတင်းကြား ကွာဟချက်။"
     },
     {
@@ -3501,7 +3536,7 @@
     },
     {
         "word": "credit",
-        "type": "",
+        "type": "v",
         "definition": "အကြွေးပေးချေရန် ဆိုင်းငံ့ခွင့်။ (ဘဏ်စသည်မှ) ချေးငွေ။"
     },
     {
@@ -3512,7 +3547,7 @@
     {
         "word": "criminal",
         "type": "adj",
-        "definition": "Qvesqj:ee003¢0000 (Cdgeryog§eoo1"
+        "definition": "ရာဇဝတ်မှုနှင့်ဆိုင်သော။ ပြစ်မှုဆိုင်ရာ။"
     },
     {
         "word": "criminology",
@@ -3527,7 +3562,7 @@
     {
         "word": "cross-border",
         "type": "adj",
-        "definition": "905§$805(goseaySe2001"
+        "definition": "နယ်စပ်ဖြတ်ကျော်သော။ နိုင်ငံတကာဆိုင်ရာ။"
     },
     {
         "word": "cross-examine",
@@ -3556,12 +3591,12 @@
     },
     {
         "word": "custody",
-        "type": "",
+        "type": "adj",
         "definition": "ထိမ်းသိမ်းစောင့် ရှောက်မှု။ ထိန်းသိမ်းစောင့်ရှောက်ခွင့်။"
     },
     {
         "word": "custom",
-        "type": "",
+        "type": "v",
         "definition": "ဓလေ့။ ထုံးတမ်း။ ထုံးစံ။ အလေ့အထ။ အကျင့်။ အလေ့အထ။ ဖောက်သည်အဖြစ်။ အမြဲဝယ်ယူအားပေးမူ။"
     },
     {
@@ -3576,7 +3611,7 @@
     },
     {
         "word": "damage",
-        "type": "",
+        "type": "n",
         "definition": "အပျက်အစီး။ ထိခိုက်မှု။ ပျက်စီးမှုအတိုင်းအတာ။ အပျက်။"
     },
     {
@@ -3596,7 +3631,7 @@
     },
     {
         "word": "death sentence",
-        "type": "",
+        "type": "n",
         "definition": "သေဒဏ်။"
     },
     {
@@ -3616,7 +3651,7 @@
     },
     {
         "word": "debit",
-        "type": "",
+        "type": "n",
         "definition": "ပေးချေရန်ငွေ။ ပေးငွေ။ မြီစားစာရင်း။ အနုတ်လက္ခဏာ။"
     },
     {
@@ -3711,7 +3746,7 @@
     },
     {
         "word": "defect",
-        "type": "",
+        "type": "n",
         "definition": "အပြစ်အနာအဆာ။ ချွတ်ယွင်းချက်။"
     },
     {
@@ -3840,7 +3875,7 @@
         "definition": "ဒီမိုကရေစီဝါဒ အခြေခံသော။"
     },
     {
-        "word": "demeratize",
+        "word": "democratize",
         "type": "v",
         "definition": "ဒီမိုကရေစီကျင့်သုံးသည်။ [ / v သက်သေသာဓကနှင့် ထင်ထင်ရှားရှားပြသည်၊ ထင်ရှား စေသည်။ လက်တွေ့ပြသည်။ သဘောထားကို လက်တွေ့ ပြသည်။"
     },
@@ -3886,7 +3921,7 @@
     },
     {
         "word": "dependant",
-        "type": "",
+        "type": "n",
         "definition": "မှီခိုသူ။"
     },
     {
@@ -4000,12 +4035,12 @@
         "definition": "20098:288E0328,e09011 အာဏာရင်ဆန်သော။"
     },
     {
-        "word": "depotism",
+        "word": "despotism",
         "type": "n",
         "definition": "သက်ဦးဆံပိုင် အုပ်ချုပ်မှု။ သက်ဦးဆံပိုင်စနစ်။"
     },
     {
-        "word": "destory",
+        "word": "destroy",
         "type": "v",
         "definition": "ဖျက်ဆီးသည်။ ဖျောက်ဖျက်သည်။ ပျက်စေသည်။ ချေမှုန်းသည်။"
     },
@@ -4021,7 +4056,7 @@
     },
     {
         "word": "detail",
-        "type": "",
+        "type": "n",
         "definition": "အသေးစိတ်အချက်အလက်။ အသေးစိတ်။"
     },
     {
@@ -4035,8 +4070,8 @@
         "definition": "စုံထောက်ခြင်း။ ရှာဖွေတွေ့ရှိခြင်း။ စုံစမ်းခြင်း။"
     },
     {
-        "word": "detecive",
-        "type": "",
+        "word": "detective",
+        "type": "adj",
         "definition": "စုံထောက်။"
     },
     {
@@ -4061,12 +4096,12 @@
     },
     {
         "word": "deterrent",
-        "type": "",
+        "type": "n",
         "definition": "ဟန့်တားမှု။ အဟန့်အတား။"
     },
     {
         "word": "deterrence",
-        "type": "",
+        "type": "n",
         "definition": "အခြိမ်းအခြောက် အဟန့်အတား။"
     },
     {
@@ -4087,7 +4122,7 @@
     {
         "word": "devolution",
         "type": "n",
-        "definition": "ဗဟိုမှ အာဏာကို လက်အောက် အဖွဲ့အစည်းများသို့ ခွဲဝေပေးခြင်း။ gocseqqpediong အဘိဓာနိ-၅၈ diary / နေ့စဉ်မှတ်တမ်းစာအုပ်။ ဒိုင်ယာရီစာအုပ်။"
+        "definition": "ဗဟိုမှ အာဏာကို လက်အောက် အဖွဲ့အစည်းများသို့ ခွဲဝေပေးခြင်း။ diary နေ့စဉ်မှတ်တမ်းစာအုပ်။ ဒိုင်ယာရီစာအုပ်။"
     },
     {
         "word": "differ",
@@ -4096,7 +4131,7 @@
     },
     {
         "word": "difference",
-        "type": "",
+        "type": "n",
         "definition": "ခြားနားချက်။ ကွဲပြားချက်။ ပြောင်းလဲချက်။ ကွာခြားချက်။ ကွာဟမှု။ ခြားနားချက်။ ပြောင်းလဲမှု။ အပိုအလို။"
     },
     {
@@ -4121,7 +4156,7 @@
     },
     {
         "word": "diplomat",
-        "type": "",
+        "type": "n",
         "definition": "သံတမန်။ လူမှုဆက်ဆံရေး၌ လိမ္မာသူ။"
     },
     {
@@ -4231,7 +4266,7 @@
     },
     {
         "word": "discount",
-        "type": "",
+        "type": "adj",
         "definition": "မူလတန်ဖိုးမှ လျှော့ပေးသောငွေ။ လျှော့ဈေး။"
     },
     {
@@ -4262,7 +4297,7 @@
     {
         "word": "disdain",
         "type": "v",
-        "definition": "esmoayjegomaya095up + သဘောထား၍ 00 ¢ Ly ¢ ¢ ¢ ¢ ¢ ¢ တစ်ခုကို ငြင်းပယ်သည်။ အဖက်မတန်ဟု ထင်သည်။ မတူမတန်သဘောထားသည်။ disenfranchise/ v မဲပေးပိုင်ခွင့် ရုပ်သိမ်းသည်။"
+        "definition": "သဘောထား၍ တစ်ခုကို ငြင်းပယ်သည်။ အဖက်မတန်ဟု ထင်သည်။ မတူမတန်သဘောထားသည်။ disenfranchise မဲပေးပိုင်ခွင့် ရုပ်သိမ်းသည်။"
     },
     {
         "word": "disequilibrium",
@@ -4272,7 +4307,7 @@
     {
         "word": "disfigure",
         "type": "v",
-        "definition": "qSqjoda0€:qj03[eSesarxEq9Sa09511 သေရာပါတဲ့အထိ (၃ 2 ¢ ¢ ¢ ¢ ရုပ်ပျက်ဆင်းပျက် ဖြစ်သွားရှာတယ်။"
+        "definition": "သေရာပါတဲ့အထိ ရုပ်ပျက်ဆင်းပျက် ဖြစ်သွားရှာတယ်။"
     },
     {
         "word": "dishonest",
@@ -4476,12 +4511,12 @@
     },
     {
         "word": "divorcee",
-        "type": "",
+        "type": "n",
         "definition": "တစ်ခုလပ်။"
     },
     {
         "word": "dock",
-        "type": "",
+        "type": "n",
         "definition": "(တရားရုံး) ဝက်ခြံ။"
     },
     {
@@ -4506,7 +4541,7 @@
     },
     {
         "word": "domicile",
-        "type": "",
+        "type": "n",
         "definition": "တရားဝင် အတည်အကျနေထိုင်ရာနိုင်ငံ၊ မြို့၊ ရွာ။"
     },
     {
@@ -4517,7 +4552,7 @@
     {
         "word": "dominate",
         "type": "v",
-        "definition": "$:9:(805apaSa09511 ကြီးစိုးသည်။ ထင်ရှားသည်။ အဓိကကျသည်။ ချုပ်ကိုင်ထားသည်။ အပိုင်စီးထားသည်။"
+        "definition": "ကြီးစိုးသည်။ ထင်ရှားသည်။ အဓိကကျသည်။ ချုပ်ကိုင်ထားသည်။ အပိုင်စီးထားသည်။"
     },
     {
         "word": "domineering",
@@ -4526,7 +4561,7 @@
     },
     {
         "word": "dominion",
-        "type": "",
+        "type": "n",
         "definition": "စိုးမိုးမှု။ အုပ်ချုပ်မှု။"
     },
     {
@@ -4606,7 +4641,7 @@
     },
     {
         "word": "economics",
-        "type": "",
+        "type": "n",
         "definition": "စီးပွားရေးပညာ။ ဘောဂဗေဒ။"
     },
     {
@@ -4616,12 +4651,12 @@
     },
     {
         "word": "economy",
-        "type": "",
+        "type": "adj",
         "definition": "စီးပွားရေး။"
     },
     {
         "word": "effect",
-        "type": "",
+        "type": "n",
         "definition": "အကျိုးတရား။ အကျိုးဆက်။ ရလဒ်။ သက်ရောက်မှု။ ထိရောက်မှု။"
     },
     {
@@ -4691,7 +4726,7 @@
     },
     {
         "word": "embassy",
-        "type": "",
+        "type": "adj",
         "definition": "သံရုံး။ သံရုံ( အဆောက်အဦး)။"
     },
     {
@@ -4711,12 +4746,12 @@
     },
     {
         "word": "emigre",
-        "type": "",
+        "type": "n",
         "definition": "ပြည်ပြေး။"
     },
     {
         "word": "empire",
-        "type": "",
+        "type": "adj",
         "definition": "ဧကရာဇ်တစ်ဦး လက်အောက်ရှိ နိုင်ငံများ။ အင်ပါယာ။ နိုင်ငံအများက စိုးမိုးသော တန်ခိုးအာဏာ။"
     },
     {
@@ -4747,7 +4782,7 @@
     {
         "word": "endorse",
         "type": "v",
-        "definition": "s20r95[jeoroopSiccoomSdaqyreuro095u (လက်တွေ့သုံးစွဲ မှတ် နောက်ကျောတွင် မှန်ကန်ကြောင်း လက်မှတ်ထိုးသည်။"
+        "definition": "လက်တွေ့သုံးစွဲ မှတ် နောက်ကျောတွင် မှန်ကန်ကြောင်း လက်မှတ်ထိုးသည်။"
     },
     {
         "word": "endorsement",
@@ -4776,7 +4811,7 @@
     },
     {
         "word": "enterprise",
-        "type": "",
+        "type": "n",
         "definition": "စီမံကိန်း၊ လုပ်ငန်း။ (ပုဂ္ဂလိကပိုင်) စီးပွားရေးလုပ်ငန်း။ ကုမ္ပဏီ။ စီးပွားအဖွဲ့အစည်း။"
     },
     {
@@ -4841,7 +4876,7 @@
     },
     {
         "word": "escapee",
-        "type": "",
+        "type": "n",
         "definition": "ထောင်ပြေး။"
     },
     {
@@ -4866,7 +4901,7 @@
     },
     {
         "word": "ethic",
-        "type": "",
+        "type": "adj",
         "definition": "လူ့ကျင့်ဝတ်။ ကိုယ်ကျင့်သိက္ခာ။ ကျင့်ဝတ်တရား။ ကိုယ်ကျင့်တရား။"
     },
     {
@@ -4901,7 +4936,7 @@
     },
     {
         "word": "example",
-        "type": "",
+        "type": "n",
         "definition": "ပုံစံ။ သာဓက။ နမူနာ။ ဥပမာ။"
     },
     {
@@ -4911,7 +4946,7 @@
     },
     {
         "word": "except",
-        "type": "",
+        "type": "prep",
         "definition": "perp မှလွဲ၍။ မှတစ်ပါး။"
     },
     {
@@ -4986,7 +5021,7 @@
     },
     {
         "word": "expatriate",
-        "type": "",
+        "type": "v",
         "definition": "ပြည်ပြေး။"
     },
     {
@@ -4996,7 +5031,7 @@
     },
     {
         "word": "expense",
-        "type": "",
+        "type": "n",
         "definition": "အကုန်အကျ။ စရိတ်။"
     },
     {
@@ -5006,12 +5041,12 @@
     },
     {
         "word": "experience",
-        "type": "",
+        "type": "n",
         "definition": "ကိုယ်တွေ့။ အတွေ့အကြုံ။"
     },
     {
         "word": "expert",
-        "type": "",
+        "type": "n",
         "definition": "ကျွမ်းကျင်သူ။ ပညာရှင်။ ပါရဂူ။"
     },
     {
@@ -5051,7 +5086,7 @@
     },
     {
         "word": "explosive",
-        "type": "",
+        "type": "adj",
         "definition": "ပေါက်ကွဲတတ်သောပစ္စည်း။"
     },
     {
@@ -5120,7 +5155,7 @@
         "definition": "ကယ်ထုတ်သည်။ ကယ်တင်သည်။ လွတ်မြောက်စေသည်။"
     },
     {
-        "word": "eyecuritness",
+        "word": "eyewitness",
         "type": "n",
         "definition": "မျက်မြင်သက်သေ။ F"
     },
@@ -5216,12 +5251,12 @@
     },
     {
         "word": "fatherland",
-        "type": "",
+        "type": "n",
         "definition": "အဖနိုင်ငံ (အမိနိုင်ငံ)။"
     },
     {
         "word": "fault",
-        "type": "",
+        "type": "n",
         "definition": "အမှား။ အပြစ်အနာအဆာ။"
     },
     {
@@ -5267,7 +5302,7 @@
     {
         "word": "federal",
         "type": "adj",
-        "definition": "ocfoofing သီးခြားပြည်နယ်များအကြာ အာဏာကန့်သတ် ခွဲဝေမှုရှိသော၊ ထားသော၊ ဗဟိုအစိုးရနှင့်သက်ဆိုင်သော။ federalism /n 9053q 050131"
+        "definition": "သီးခြားပြည်နယ်များအကြာ အာဏာကန့်သတ် ခွဲဝေမှုရှိသော၊ ထားသော၊ ဗဟိုအစိုးရနှင့်သက်ဆိုင်သော။ federalism ဖက်ဒရယ်စနစ်။"
     },
     {
         "word": "federalist",
@@ -5281,7 +5316,7 @@
     },
     {
         "word": "fence",
-        "type": "",
+        "type": "n",
         "definition": "သူခိုးလက်ခံ။"
     },
     {
@@ -5351,7 +5386,7 @@
     },
     {
         "word": "first",
-        "type": "",
+        "type": "adj",
         "definition": "အဦး။ အစ၊။ ပထမ။"
     },
     {
@@ -5361,7 +5396,7 @@
     },
     {
         "word": "first name",
-        "type": "",
+        "type": "n",
         "definition": "အများအားဖြင့် အနောက်နိုင်ငံတို့တွင် သားသမီးမွေးသည့် အခါ မျိုးရိုးအမည်၏ ရှေ့မှ တပ်ခေါ်ရန်ပေးသည့်အမည်။ ပထမအမည်။ ခရစ်ယာန်အမည်။"
     },
     {
@@ -5416,7 +5451,7 @@
     },
     {
         "word": "foreign exchange",
-        "type": "",
+        "type": "n",
         "definition": "နိုင်ငံခြားငွေကြေး။"
     },
     {
@@ -5456,7 +5491,7 @@
     },
     {
         "word": "foundling",
-        "type": "",
+        "type": "adj",
         "definition": "ကောက်ရသော ကလေးငယ်။"
     },
     {
@@ -5501,7 +5536,7 @@
     },
     {
         "word": "fugitive",
-        "type": "",
+        "type": "adj",
         "definition": "တရားခံပြေး။ ဝရမ်းပြေး။"
     },
     {
@@ -5576,7 +5611,7 @@
     },
     {
         "word": "gazumping",
-        "type": "",
+        "type": "n",
         "definition": "အိမ်ဈေးညိပြီးမှ ရောင်းသူ ဈေးပိုတောင်းမှု။"
     },
     {
@@ -5601,7 +5636,7 @@
     },
     {
         "word": "the generation gap",
-        "type": "",
+        "type": "n",
         "definition": "လူကြီးနှင့်လူငယ်။ ခြားနားကွာဟချက်။"
     },
     {
@@ -5621,7 +5656,7 @@
     },
     {
         "word": "gentlefolk",
-        "type": "",
+        "type": "n",
         "definition": "အထက်တန်းလွှာ။"
     },
     {
@@ -5636,7 +5671,7 @@
     },
     {
         "word": "godson",
-        "type": "",
+        "type": "n",
         "definition": "ခေါင်းကိုင်သား။"
     },
     {
@@ -5646,7 +5681,7 @@
     },
     {
         "word": "governance",
-        "type": "",
+        "type": "n",
         "definition": "အုပ်ချုပ်ပုံ။ အုပ်ချုပ်မှု။"
     },
     {
@@ -5691,7 +5726,7 @@
     },
     {
         "word": "guild",
-        "type": "",
+        "type": "v",
         "definition": "(ကုန်သည်များ၊ အလုပ်သမားများ စသည်) အစည်းအရုံး။"
     },
     {
@@ -5711,7 +5746,7 @@
     },
     {
         "word": "haematology",
-        "type": "",
+        "type": "adj",
         "definition": "သွေးပညာ။"
     },
     {
@@ -5731,7 +5766,7 @@
     },
     {
         "word": "hangman",
-        "type": "",
+        "type": "n",
         "definition": "ကြိုးပေးသူ။ ဒေါက်ဖြုတ်။"
     },
     {
@@ -5751,7 +5786,7 @@
     },
     {
         "word": "harlot",
-        "type": "",
+        "type": "n",
         "definition": "ပြည့်တန်ဆာ။"
     },
     {
@@ -5786,7 +5821,7 @@
     },
     {
         "word": "hearsay",
-        "type": "",
+        "type": "adj",
         "definition": "တစ်ဆင့်စကား။ ကောလာဟလာ။"
     },
     {
@@ -5821,12 +5856,12 @@
     },
     {
         "word": "heritage",
-        "type": "",
+        "type": "n",
         "definition": "အမွေ။ အမွေအနှစ်။"
     },
     {
         "word": "heroin",
-        "type": "",
+        "type": "n",
         "definition": "ဘိန်းဖြူ။"
     },
     {
@@ -5836,11 +5871,11 @@
     },
     {
         "word": "High Court",
-        "type": "",
+        "type": "n",
         "definition": "ဗဟိုတရားရုံး။ တရားရုံးချုပ်။"
     },
     {
-        "word": "hiljack",
+        "word": "hijack",
         "type": "v",
         "definition": "(အထူးသဖြင့် လေယာဉ်) အပိုင်စီးသည်။ hijack /n အပိုင်စီးခြင်း။ အပိုင်စီးမှု။ hijacker /n (လေယာဉ်သည်) အပိုင်စီးသူ။"
     },
@@ -5856,12 +5891,12 @@
     },
     {
         "word": "home",
-        "type": "",
+        "type": "v",
         "definition": "နေအိမ်၊ အိမ်၊ ဇာတိချက်ကြွေ မွေးရပ်မြေ။ (မြို့၊ တိုင်း၊ နိုင်ငံ စသည်)။"
     },
     {
         "word": "home economics",
-        "type": "",
+        "type": "n",
         "definition": "အိမ်တွင်းမှုသိပ္ပံ။"
     },
     {
@@ -5876,12 +5911,12 @@
     },
     {
         "word": "home rule",
-        "type": "",
+        "type": "n",
         "definition": "ကိုယ်ပိုင်အုပ်ချုပ်ရေး။ ဟုမ်းမရူး။"
     },
     {
         "word": "homicide",
-        "type": "",
+        "type": "n",
         "definition": "လူသတ်မှု။"
     },
     {
@@ -5906,7 +5941,7 @@
     },
     {
         "word": "hoodlum",
-        "type": "",
+        "type": "n",
         "definition": "လူရမ်းကား။ လူဆိုးလူတေ။ လူမိုက်။ ပြစ်မှုကျူးလွန်သူ။ လူဆိုးဂိုဏ်းဝင်။"
     },
     {
@@ -5916,7 +5951,7 @@
     },
     {
         "word": "horde",
-        "type": "",
+        "type": "n",
         "definition": "လူစုလူဝေး။ လူအုပ်၊ အအုပ်။"
     },
     {
@@ -5931,7 +5966,7 @@
     },
     {
         "word": "hostage",
-        "type": "",
+        "type": "n",
         "definition": "ဓားစာခံ။"
     },
     {
@@ -5950,8 +5985,8 @@
         "definition": "လင်။ ယောက်ျား။"
     },
     {
-        "word": "huslings",
-        "type": "",
+        "word": "hustings",
+        "type": "n",
         "definition": "နိုင်ငံရေးမဲဆွယ်တရားပွဲ။"
     },
     {
@@ -5986,7 +6021,7 @@
     },
     {
         "word": "immigrant",
-        "type": "",
+        "type": "n",
         "definition": "အခြားနိုင်ငံမှ အခြေစိုက်ရန် ဝင်လာသူ။"
     },
     {
@@ -6046,7 +6081,7 @@
     },
     {
         "word": "imprimatur",
-        "type": "",
+        "type": "n",
         "definition": "ပုံနှိပ်ထုတ်ဝေခွင့်။"
     },
     {
@@ -6055,7 +6090,7 @@
         "definition": "ထောင်သွင်းအကျဉ်းချသည်။ ထောင်ချသည်။"
     },
     {
-        "word": "imprpper",
+        "word": "improper",
         "type": "adj",
         "definition": "မှားသော။ မမှန်သော။ မလျော်ကန်သော။ မသင့်လျော်သော။ မရိုးသားသော။"
     },
@@ -6076,7 +6111,7 @@
     },
     {
         "word": "inaccuracy",
-        "type": "",
+        "type": "n",
         "definition": "အမှား။ ချွတ်ယွင်းချက်။"
     },
     {
@@ -6102,7 +6137,7 @@
     {
         "word": "incautious",
         "type": "adj",
-        "definition": "ao03codegosea091I"
+        "definition": "သတိမရှိသော။ လျှာမရှိသော။ သတိမမူသော။"
     },
     {
         "word": "incautiously",
@@ -6151,7 +6186,7 @@
     },
     {
         "word": "increase",
-        "type": "",
+        "type": "adj",
         "definition": "တိုးလာသော ပမာဏ။ တိုးပွားမှု။"
     },
     {
@@ -6206,7 +6241,7 @@
     },
     {
         "word": "index",
-        "type": "",
+        "type": "n",
         "definition": "အညွန်း။ အညွန်းစာချုပ်။ ရည်ညွှန်းချက်။"
     },
     {
@@ -6261,7 +6296,7 @@
     },
     {
         "word": "industrial estate",
-        "type": "",
+        "type": "v",
         "definition": "စက်မှုဇုန်။"
     },
     {
@@ -6291,7 +6326,7 @@
     },
     {
         "word": "influence",
-        "type": "",
+        "type": "n",
         "definition": "အရှိန်အဝါ i ဩဇာတိက္ကမ။ သဇာလွမ်းမိုးမှု။ အရှိန်အဝါ ။ သြဇာ။"
     },
     {
@@ -6306,11 +6341,11 @@
     },
     {
         "word": "informant",
-        "type": "",
+        "type": "n",
         "definition": "သတင်းပေး။ သတင်း။ အချက်အလက်ပေးသူ။"
     },
     {
-        "word": "informantion",
+        "word": "information",
         "type": "n",
         "definition": "အချက်အလက်။ သတင်း။ သုတ။"
     },
@@ -6352,7 +6387,7 @@
     {
         "word": "iniquitous",
         "type": "adj",
-        "definition": "SaOQSegIjorso209II မတရားသော။ ဆိုးယုတ်သော။"
+        "definition": "မတရားသော။ ဆိုးယုတ်သော။"
     },
     {
         "word": "iniquity",
@@ -6512,7 +6547,7 @@
     {
         "word": "international",
         "type": "adj",
-        "definition": "အပြည်ပြည်ဆိုင်ရာ။ SééornrgEvosa005ea001"
+        "definition": "အပြည်ပြည်ဆိုင်ရာ။"
     },
     {
         "word": "internationalize",
@@ -6550,7 +6585,7 @@
         "definition": "မေးမြန်းစစ်ဆေးသူ။"
     },
     {
-        "word": "interrogaive",
+        "word": "interrogative",
         "type": "adj",
         "definition": "မေးမြန်းသော။ မေးမြန်းဟန်ရှိသော။"
     },
@@ -6780,7 +6815,7 @@
         "definition": "ပြန်ပေးဆွဲသည်။"
     },
     {
-        "word": "kidanpper",
+        "word": "kidnapper",
         "type": "n",
         "definition": "ပြန်ပေးဆွဲသူ။"
     },
@@ -6816,7 +6851,7 @@
     },
     {
         "word": "knock",
-        "type": "",
+        "type": "adj",
         "definition": "ပြင်းထန်စွာထိခိုက်မိ၍ရသောဒဏ်ရာ၊ ဒဏ်ချက်။"
     },
     {
@@ -6891,7 +6926,7 @@
     },
     {
         "word": "league",
-        "type": "",
+        "type": "n",
         "definition": "ရည်ရွယ်ချက်ချင်းတူသူ။ နိုင်ငံစသည် အဖွဲ့အစည်း၊ အသင်း။"
     },
     {
@@ -6931,7 +6966,7 @@
     },
     {
         "word": "lessee",
-        "type": "",
+        "type": "n",
         "definition": "အိမ်၊ မြေ စာချုပ်နှင့် ငှားရမ်းနေထိုင်သူ။ ငှားနေသူ။ အိမ်ငှား။ မြေငှား။"
     },
     {
@@ -7090,7 +7125,7 @@
         "definition": "လူအင်အား။"
     },
     {
-        "word": "manslaugther",
+        "word": "manslaughter",
         "type": "n",
         "definition": "လူသေမှု။"
     },
@@ -7151,7 +7186,7 @@
     },
     {
         "word": "mass",
-        "type": "",
+        "type": "adj",
         "definition": "အများနှင့်ဆိုင်သော။ လူထု။ အစုလိုက်အပြုံလိုက်။"
     },
     {
@@ -7246,7 +7281,7 @@
     },
     {
         "word": "message",
-        "type": "",
+        "type": "n",
         "definition": "သတင်း။ အမှာစကား။ မှာကြားချက်။ အာဘော်။ အဆိုအမိန့်။"
     },
     {
@@ -7331,7 +7366,7 @@
     },
     {
         "word": "misconduct",
-        "type": "",
+        "type": "adj",
         "definition": "လက်မခံနိုင်သောအပြုအမူ။ ပေါ့ဆမှု။"
     },
     {
@@ -7451,12 +7486,12 @@
     },
     {
         "word": "money",
-        "type": "",
+        "type": "adj",
         "definition": "ငွေ။ ပိုက်ဆံ။ အသပြာ။"
     },
     {
         "word": "moneybags",
-        "type": "",
+        "type": "n",
         "definition": "သူဌေးကြီး။ ဓနရှင်။"
     },
     {
@@ -7505,7 +7540,7 @@
         "definition": "ရွေ့ပြောင်း၍ရသော။"
     },
     {
-        "word": "mufit",
+        "word": "mufti",
         "type": "n",
         "definition": "အရပ်ဝတ်အရပ်စား။ multicultural / လူမျိုးပေါင်းစုံ။ ဘာသာပေါင်းစုံ။"
     },
@@ -7615,7 +7650,7 @@
         "definition": "ev] a0¢290\" ဂရုမစိက်သော။"
     },
     {
-        "word": "negotiabte",
+        "word": "negotiable",
         "type": "adj",
         "definition": "ညိနှိုင်းနိုင်သော။ (ချက် စသည်) ငွေသားဖြင့် လဲလှယ် ထုတ်ယူနိုင်သော၊ အခြားသူထံ လွဲပြောင်းပေးနိုင်သော။"
     },
@@ -7726,7 +7761,7 @@
     },
     {
         "word": "notwithstanding",
-        "type": "",
+        "type": "adj",
         "definition": "ပါလျက်။ သော်ငြားလည်း။ လင့်ကစား။"
     },
     {
@@ -8001,7 +8036,7 @@
     },
     {
         "word": "paparazzo",
-        "type": "",
+        "type": "n",
         "definition": "သတင်းကြီးသူများနောက် တကောက်ကောက်လိုက်နေ သော သတင်းထောက်။"
     },
     {
@@ -8071,7 +8106,7 @@
     },
     {
         "word": "partnership",
-        "type": "",
+        "type": "n",
         "definition": "စီးပွားဖက်အဖြစ်။ အစုစပ်။"
     },
     {
@@ -8086,7 +8121,7 @@
     },
     {
         "word": "partimony",
-        "type": "",
+        "type": "adj",
         "definition": "ဖခင်၏အမွေ (သို့) ဘိုးဘအမွေ။ ween? Paw ဏိကာ။ +=--- Mee eer te"
     },
     {
@@ -8151,7 +8186,7 @@
     },
     {
         "word": "penitentiary",
-        "type": "",
+        "type": "adj",
         "definition": "အကျဉ်းထောင်။ ကာ။ enc we... _ we... cr ie ears Ne ae ee ee မာ။"
     },
     {
@@ -8220,7 +8255,7 @@
         "definition": "ကိုယ်တိုင်ကိုယ်ကျ။ ကိုယ်တိုင်။ ပုဂ္ဂိုလ်ရေးအရ။"
     },
     {
-        "word": "personlity",
+        "word": "personality",
         "type": "n",
         "definition": "ပင်ကိုယ်စရိုက်။ ထူးခြားသောပင်ကိုယ်အရည်အသွေး။"
     },
@@ -8266,7 +8301,7 @@
     },
     {
         "word": "picket",
-        "type": "",
+        "type": "n",
         "definition": "သပိတ်တားသူ( များ)။ ရပ်လျက် စုဖွဲ့ ဆန္ဒပြမှု။"
     },
     {
@@ -8285,7 +8320,7 @@
         "definition": "လစ်သည်။ အလစ်သုတ်သည်။ ခိုးသည်။ placate /+ ပြေရာပြေကြောင်း ပြောသည်။ ဖျောင်းဖျသည်။"
     },
     {
-        "word": "plactory",
+        "word": "placatory",
         "type": "adj",
         "definition": "ကျေရာကျေကြောင်း။ တောင်းပန်သော။ plaintiff /n တရားလို။ plead /v အသနားခံသည်။ တောင်းပန်သည်။ လျှောက်လဲသည်။ အမှုလိုက်သည်။ ထွက်ဆိုသည်။ လျှောက်လဲသည်။"
     },
@@ -8341,7 +8376,7 @@
     },
     {
         "word": "pogrom",
-        "type": "",
+        "type": "n",
         "definition": "လူမျိုးရေး၊ ဘာသာရေးအရ စနစ်တကျ ဖိနိပ်သတ်ဖြတ်မူ။"
     },
     {
@@ -8401,7 +8436,7 @@
     },
     {
         "word": "political science",
-        "type": "",
+        "type": "adj",
         "definition": "အစိုးရနှင့်နိုင်ငံရေး အဖွဲ့အစည်းများကို လေ့လာသောပညာရပ်။ နိုင်ငံရေးဗေဒ။ နိုင်ငံရေးသိပ္ပံ။"
     },
     {
@@ -8415,13 +8450,13 @@
         "definition": "နိုင်ငံရေး။ နိုင်ငံရေးခံယူချက်။ See) Sey See EE Py ernoc"
     },
     {
-        "word": "POlyeharous",
+        "word": "Polyandrous",
         "type": "adj",
         "definition": "at) coeigell"
     },
     {
         "word": "polygamy",
-        "type": "",
+        "type": "adj",
         "definition": "တစ်ချိန်တည်း မယားတစ်ယောက်မက ယူသောဓလေ့။ မယားပြိုင်ယူဓလေ့။"
     },
     {
@@ -8471,7 +8506,7 @@
     },
     {
         "word": "postage",
-        "type": "",
+        "type": "n",
         "definition": "စာပို့ခ။"
     },
     {
@@ -8556,7 +8591,7 @@
     },
     {
         "word": "prerogative",
-        "type": "",
+        "type": "adj",
         "definition": "(ရာထူးအရ ရရှိသော)အခွင့်အာဏာ၊အထူးလုပ်ပိုင်ခွင်အာဏာ။"
     },
     {
@@ -8596,7 +8631,7 @@
     },
     {
         "word": "pretend",
-        "type": "",
+        "type": "v",
         "definition": "ဟန်ဆောင်သည်"
     },
     {
@@ -8872,10 +8907,10 @@
     {
         "word": "propound",
         "type": "v",
-        "definition": "@93090500€(G2095 1"
+        "definition": "အဆိုပြုသည်။ တင်ပြသည်။ ဖော်ပြသည်။"
     },
     {
-        "word": "proscirbe",
+        "word": "proscribe",
         "type": "v",
         "definition": "တရားဝင်တားမြစ်ပိတ်ပင်သည်။ proscription /n တားမြစ်ပိတ်ပင်ခြင်း။"
     },
@@ -9047,7 +9082,7 @@
     {
         "word": "rank",
         "type": "v",
-        "definition": "BasoEsVO2§:9905g030095 1 အရာထားသည်။ အဆင့်အတန်းရှိသည်။ ransom /n ဖမ်းဆီးထားသူကို ပြန်ရွေးရာ၌ co:qooaSegii"
+        "definition": "အရာထားသည်။ အဆင့်အတန်းရှိသည်။ ransom ဖမ်းဆီးထားသူကို ပြန်ရွေးရာ၌ ပေးရသောငွေ။"
     },
     {
         "word": "ransom",
@@ -9081,7 +9116,7 @@
     },
     {
         "word": "realm",
-        "type": "",
+        "type": "adj",
         "definition": "ဘုရင်။ ဘုရင်မ။ အုပ်စိုးသောနိုင်ငံ။ realpolitik ၅ တရားသည် မတရားသည်အပထား မိမိလူမျိုးအကျိုးသာ လျှင် ပဓာနဟူသော နိုင်ငံရေးအမြင်။"
     },
     {
@@ -9111,7 +9146,7 @@
     },
     {
         "word": "rebel",
-        "type": "",
+        "type": "n",
         "definition": "သူပုန်။ သောင်းကျန်းသူ။"
     },
     {
@@ -9312,7 +9347,7 @@
     {
         "word": "redevlopment",
         "type": "n",
-        "definition": "sao0dea0r030p5[aErn redress /v တရားသဖြင့်ဖြစ်စေသည်။ (အမှားကို အမှန်ရောက်အောင်) ပြုပြင်ပေးသည်။ (နစ်နာမှုအတွက်) အလျော်ပေးသည်။"
+        "definition": "ပြန်လည်ဖွံ့ဖြိုးတိုးတက်စေခြင်း။ redress တရားသဖြင့်ဖြစ်စေသည်။ (အမှားကို အမှန်ရောက်အောင်) ပြုပြင်ပေးသည်။ (နစ်နာမှုအတွက်) အလျော်ပေးသည်။"
     },
     {
         "word": "redress",
@@ -9401,7 +9436,7 @@
     },
     {
         "word": "regime",
-        "type": "",
+        "type": "n",
         "definition": "အစိုးရစနစ်။ အစိုးရ။ စနစ်။"
     },
     {
@@ -9890,7 +9925,7 @@
         "definition": "သုတေသန။"
     },
     {
-        "word": "resarch",
+        "word": "research",
         "type": "v",
         "definition": "သုတေသနပြုသည်။"
     },
@@ -9931,7 +9966,7 @@
     },
     {
         "word": "resident",
-        "type": "",
+        "type": "n",
         "definition": "နေရာဒေသတစ်ခုတွင် အိမ်ရာအတည်အကျနေထိုင်သူ။ ရပ်သူရွာသား။ ရွာခံ၊ ဒေသခံ။"
     },
     {
@@ -10011,7 +10046,7 @@
     },
     {
         "word": "respondent",
-        "type": "",
+        "type": "n",
         "definition": "(လင်ကွာ မယားကွာ အမှုများ) တိုင်တန်းခံရသူ။ (တရားမမှုများ၌) လျှောက်ထားခံရသူ။"
     },
     {
@@ -10170,12 +10205,12 @@
         "definition": "ဥစ္စာဓန။ ဩဇာပြည့်လျှမ်းမှု။"
     },
     {
-        "word": "rigth",
+        "word": "right",
         "type": "adj",
         "definition": "မှန်ကန်(သော) တရား(သော)။ လမ်းကျ(သော)။ ကောင်း(သော)။ မှန်သော။"
     },
     {
-        "word": "rigth",
+        "word": "right",
         "type": "",
         "definition": "အမှန်။ လုပ်ပိုင်ခွင့်။ အခွင့်။ အခွင့်အရေး။"
     },
@@ -10220,7 +10255,7 @@
         "definition": "မင်း၊ မိဖုရားတို့၏ မင်းမျိုးမင်းနွယ်။ ထီးရိုးနန်းနွယ်။ တော်ဝင်။ ကြီးကျယ်ခမ်းနားသော။ အုပ်ချုပ်မှု။ အစိုးရ။ ကြီးစိုးမှု။"
     },
     {
-        "word": "tule",
+        "word": "rule",
         "type": "v",
         "definition": "စိုးမိုးသည်။ အုပ်ချုပ်သည်။ ပြဋ္ဌာန်းသည်။ အမိန့်ချမှတ်သည်။ စီရင်ချက်ချသည်။"
     },
@@ -10336,7 +10371,7 @@
     },
     {
         "word": "secretary",
-        "type": "",
+        "type": "adj",
         "definition": "အတွင်းရေး လက်ထောက်။"
     },
     {
@@ -10370,7 +10405,7 @@
         "definition": "နိုင်ငံတော်အပေါ် အကြည်ညိုပျက်စေသော။"
     },
     {
-        "word": "ssduce",
+        "word": "seduce",
         "type": "v",
         "definition": "သွေးဆောင်ဖြားယောင်းသည်။ 390599951 (ကာမ ဆက်ဆံရန်) ဖြားယောင်းသွေးဆောင်သည်။"
     },
@@ -10410,7 +10445,7 @@
         "definition": "သီးသန့် လက်ရွေး၊ ရွေးပြီး(လုပ်သော၊ ထိရောက်မှုရှိသော) စိစိစစ်စစ်ရှိသော။ selectivity /n eg:so5gil"
     },
     {
-        "word": "self-detence",
+        "word": "self-defence",
         "type": "n",
         "definition": "မိမိကိုယ်မိမိကာကွယ်ခြင်း။ self-rule / ကိုယ့်မင်းကိုယ်ချင်း။ ကိုယ်ပိုင်အုပ်ချုပ်ရေး။"
     },
@@ -10446,7 +10481,7 @@
     },
     {
         "word": "sentry",
-        "type": "",
+        "type": "adj",
         "definition": "ကင်းသမား။ အစောင့်။"
     },
     {
@@ -10505,7 +10540,7 @@
         "definition": "စာရင်းရင်းသသ်။ ကေု၊ အေးသည်။ ငြီးပြတ်သသည်။ အတည်တကျနေထိုင်သည်။ အခြေချသည်။"
     },
     {
-        "word": "settement",
+        "word": "settlement",
         "type": "n",
         "definition": "ပြီးပြေအောင်ပေးဆပ်ခြင်း။ ကျေအေးခြင်း။ ပြေငြိမ်းခြင်း။ (တရားဝင်ပေးအပ်သည့်၊ ပေးအပ်ရသည့်)ဥစ္စာကြေးငွေ။"
     },
@@ -10646,7 +10681,7 @@
     },
     {
         "word": "skilled",
-        "type": "",
+        "type": "adj",
         "definition": "adi GAS CHIR ASAE ဇဒိမာာောာာ။ Gheneaaol ကျွမ်းကျင်မှူလိုသော။"
     },
     {
@@ -10686,7 +10721,7 @@
     },
     {
         "word": "sodomite",
-        "type": "",
+        "type": "n",
         "definition": "ဓမ္မတာနှင့်ဆန့်ကျင်၍ ကာမဆက်ဆံသူ။"
     },
     {
@@ -10796,7 +10831,7 @@
     },
     {
         "word": "staff",
-        "type": "",
+        "type": "v",
         "definition": "အမထမ်းခန် အပ်သည် သိ) ရံးလပ် ငန်း စသည်တင် တာဝန်ယူ sagood:oyoSgaop5u"
     },
     {
@@ -10856,7 +10891,7 @@
     },
     {
         "word": "statesman",
-        "type": "",
+        "type": "adj",
         "definition": "အဓိကရနိုင်ငံရေးသမား။ အမြော်အမြင်ရှိသော နိုင်ငံရေးခေါင်းဆောင်။"
     },
     {
@@ -10866,7 +10901,7 @@
     },
     {
         "word": "statesmanship",
-        "type": "",
+        "type": "n",
         "definition": "နိုင်ငံရေးခေါင်းဆောင် အရည်အသွေး။"
     },
     {
@@ -10876,7 +10911,7 @@
     },
     {
         "word": "stock",
-        "type": "",
+        "type": "adj",
         "definition": "ရောင်းချရန် သို့လှောင်ထားသောကုန်။ ကုန်စည်ပစ္စည်း။ သို့လှောင်ထားသောပစ္စည်း။ စားနပ်ရိက္ခာစသည်လက်ဝယ် ရှိပစ္စည်း။၊ လက်ကျန်ပစ္စည်း။ ကုမ္ပဏီတစ်ခု၏ မတည်ငွေ ပစ္စည်း။ အဆောက်အအုံ စသည့် နုပေါင်းတန်ဖိုး အရင်းအနှီး။ ရင်းနှီးမြှုပ်နှံသည့်အနေဖြင့် ယင်းတန်ဖိုးမှ ဝယ်ယူထားသည့် တစ်စိတ်တစ်ဒေသ။ စတော့။"
     },
     {
@@ -10905,7 +10940,7 @@
         "definition": "BaopSusayrEa29511086:002:09951 သိမ်းဆည်းသည်။ stranglehold /n လည်ကိုညှစ်ခြင်း။"
     },
     {
-        "word": "srangulation",
+        "word": "strangulation",
         "type": "n",
         "definition": "အသက်မရှုနိုင်အောင်လည်မျိုညစ်ခံရခြင်း။"
     },
@@ -10916,7 +10951,7 @@
     },
     {
         "word": "strategy",
-        "type": "",
+        "type": "adj",
         "definition": "မဟာဗျူဟာ။ ဥပါယ်တံမျဉ်။"
     },
     {
@@ -10945,7 +10980,7 @@
         "definition": "တစ်ဆင့်ခံကန်ထရိုက်ပေးသည်။ လုပ်ငန်းလက်ဆင့်ကမ်းခွဲဝေသည်။"
     },
     {
-        "word": "sobdivide",
+        "word": "subdivide",
         "type": "v",
         "definition": "ထပ်ဆင့်ပိုင်းခြားသည်။ ကန့်သည်။ ထပ်ဆင့်ခွဲထွက်သည်။"
     },
@@ -11011,7 +11046,7 @@
     },
     {
         "word": "subsidiary",
-        "type": "",
+        "type": "adj",
         "definition": "လက်အောက်ခံကုမ္ပဏီ။ ကုမ္ပဏီခွဲ။"
     },
     {
@@ -11030,7 +11065,7 @@
         "definition": "ထောက်ပံ့ငွေ။ အမတော်ငွေ။ substance /n အရာ။ ဝတ္ထု။ ဥစ္စာ။ အထည်။ ကိုယ်။ ဒြပ်။ အခြေအမြစ်။ ယုတ္တိ။ အနှစ်သာရ။ ငွေကြေး။ ဥစ္စာပစ္စည်း။"
     },
     {
-        "word": "substaniate",
+        "word": "substantiate",
         "type": "v",
         "definition": "အထောက်အထား ခိုင်ခိုင်လုံလုံ တင်ပြသည်။ သက်သေပြသည်။"
     },
@@ -11081,7 +11116,7 @@
     },
     {
         "word": "supergrass",
-        "type": "",
+        "type": "adj",
         "definition": "(လူအမြောက်အမြား၏ ပြစ်မှုကို ဖော်ထုတ်ပေးသော) သတင်းပေး ဖော်ကောင်။"
     },
     {
@@ -11096,7 +11131,7 @@
     },
     {
         "word": "superintendent",
-        "type": "",
+        "type": "n",
         "definition": "ကြီးကြပ်သူ။ ရဲမှူး။"
     },
     {
@@ -11172,7 +11207,7 @@
     {
         "word": "survive",
         "type": "v",
-        "definition": "BOOS HEY$q S205 ကြွင်းကျန်ရစ်သည်။"
+        "definition": "ကြွင်းကျန်ရစ်သည်။"
     },
     {
         "word": "suspect",
@@ -11185,7 +11220,7 @@
         "definition": "ဆိုင်းထားသည်။ ဆိုင်းငံ့ထားသည်။ ရပ်ဆိုင်းသည်။ ဆိုင်းငံ့သည်။ ရာထူးခေတ္တချထားသည်။"
     },
     {
-        "word": "supension",
+        "word": "suspension",
         "type": "n",
         "definition": "ဆိုင်းခြင်း။ ဆိုးခြင်း။ ရာထူးချထားခြင်း။"
     },
@@ -11211,7 +11246,7 @@
     },
     {
         "word": "system",
-        "type": "",
+        "type": "n",
         "definition": "စနစ်။ ဖွဲ့စည်းပုံ။ နည်းစနစ်။ ဖွဲ့စည်းမှု။"
     },
     {
@@ -11340,8 +11375,8 @@
         "definition": "ထောက်ခံစာ။ ရိက ၂]။။"
     },
     {
-        "word": "Mesllnony",
-        "type": "",
+        "word": "testimony",
+        "type": "adj",
         "definition": "ih HMNICHSAUT IN GIPIsYsOBe ထွကဆု ချက် သာဓက။ ပြယုဂ်။"
     },
     {
@@ -11401,7 +11436,7 @@
     },
     {
         "word": "though",
-        "type": "",
+        "type": "adj",
         "definition": "con သော်ငြားလည်း။ လင့်ကစား။ စေကာမူ။ ပေမည့်။"
     },
     {
@@ -11466,7 +11501,7 @@
     },
     {
         "word": "trading estate",
-        "type": "",
+        "type": "v",
         "definition": "ကုန်သွယ်မှုဇုန်။"
     },
     {
@@ -11510,7 +11545,7 @@
         "definition": "ပြောင်းလဲသည်။"
     },
     {
-        "word": "trasformation",
+        "word": "transformation",
         "type": "n",
         "definition": "ပြောင်းလဲခြင်း။ transit /n အကူးအပြောင်း။ အတင်အချ။ ဖြတ်သန်းခြင်း။"
     },
@@ -11525,7 +11560,7 @@
         "definition": "အသွင်ကူးပြောင်းချိန်။ oe ၂"
     },
     {
-        "word": "tansiate",
+        "word": "translate",
         "type": "v",
         "definition": "ဘာသာုပ္ပနသည်။ translation /n ဘာသာပြန်ဆိုခြင်း။ ဘာသာပြန်ဆိုချက်။ translator /n ဘာသာပြန်။"
     },
@@ -11642,7 +11677,7 @@
     {
         "word": "unacceptable",
         "type": "adj",
-        "definition": "e008 ed EeaooIs0G2220p$EsaoI1 gEo(GEea901"
+        "definition": "လက်မခံနိုင်သော။ မလက်ခံနိုင်သော။ မသင့်တော်သော။"
     },
     {
         "word": "unaccompanied",
@@ -12296,7 +12331,7 @@
     },
     {
         "word": "unknown",
-        "type": "",
+        "type": "adj",
         "definition": "မသိသော။"
     },
     {
@@ -12337,7 +12372,7 @@
     {
         "word": "unnecessary",
         "type": "adj",
-        "definition": "မလိုသော။ cSaoaSconS$ea0\" မလိုလားအပ်သော။"
+        "definition": "မလိုသော။ မလိုလားအပ်သော။"
     },
     {
         "word": "unnoticed",
@@ -12402,7 +12437,7 @@
     {
         "word": "unprincipled",
         "type": "adj",
-        "definition": "မူမရှိသော။ စည်းကမ်းမရှိသော။ gocseqqpediong အဘိဓာနိ-၁၆၈"
+        "definition": "မူမရှိသော။ စည်းကမ်းမရှိသော။"
     },
     {
         "word": "unproblematic",
@@ -12565,7 +12600,7 @@
         "definition": "အထောက်အထားမရိုင် လုံသော။"
     },
     {
-        "word": "unsitable",
+        "word": "unsuitable",
         "type": "adj",
         "definition": "မသင့်လျော်သော။"
     },
@@ -12681,7 +12716,7 @@
     },
     {
         "word": "usage",
-        "type": "",
+        "type": "n",
         "definition": "အသုံး။ အသုံးအနှုန်း။ အသုံးပြုမှု။ သုံးစွဲမှု။ အသုံးပြုပုံ။"
     },
     {
@@ -12736,7 +12771,7 @@
     },
     {
         "word": "vagrant",
-        "type": "",
+        "type": "n",
         "definition": "အိမ်ခြေရာခြေမရှိသူ။ အိမ်မဲ့ရာမဲ့။ အိုးမဲ့အိမ်မဲ့။ ကလေကဝ။"
     },
     {
@@ -12856,7 +12891,7 @@
     },
     {
         "word": "viceroy",
-        "type": "",
+        "type": "adj",
         "definition": "ဘုရင်ခံ။"
     },
     {
@@ -12906,7 +12941,7 @@
     },
     {
         "word": "village",
-        "type": "",
+        "type": "n",
         "definition": "ကျေးရွာ။ ရွာ။ ရွာသူရွာသား။"
     },
     {
@@ -12981,7 +13016,7 @@
     },
     {
         "word": "wage",
-        "type": "",
+        "type": "n",
         "definition": "လုပ်အားခ။ လုပ်ခ။"
     },
     {
@@ -13187,6 +13222,6 @@
     {
         "word": "youth club",
         "type": "",
-        "definition": "လူငယ်ကလပ်အသင်း။ Z အဘိဓာန် ဦးကျော်ဇေယျ"
+        "definition": "လူငယ်ကလပ်အသင်း။"
     }
 ]

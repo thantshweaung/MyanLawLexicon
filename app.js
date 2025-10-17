@@ -30,7 +30,7 @@ const elements = {
     searchSuggestions: document.getElementById('searchSuggestions'),
     searchSuggestionsMobile: document.getElementById('searchSuggestionsMobile'),
     themeToggle: document.getElementById('themeToggle'),
-    visitorCount: document.getElementById('visitorCount'),
+
     termDetailModal: document.getElementById('termDetailModal'),
     passwordModal: document.getElementById('passwordModal'),
     editTermModal: document.getElementById('editTermModal'),
@@ -79,10 +79,11 @@ $(document).ready(function() {
  * Initialize all app functionality
  */
 function initializeApp() {
+    console.log('Initializing MyanLawLexicon...');
     loadDictionaryData();
     setupEventListeners();
     setupThemeToggle();
-    initializeVisitorCounter();
+
     console.log('MyanLawLexicon initialized successfully');
 }
 
@@ -90,17 +91,25 @@ function initializeApp() {
  * Load dictionary data from JSON file
  */
 async function loadDictionaryData() {
+    // Check if data is already loaded
+    if (dictionaryData.length > 0) {
+        filteredData = [...dictionaryData];
+        renderTerms();
+        return;
+    }
+    
     try {
         showLoading(true);
-        elements.termsGrid.style.display = 'block';
         
-        // Show skeleton loading
-        showSkeletonLoading();
+        // Add timeout to prevent hanging
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 10000); // 10 second timeout
         
-        // Simulate loading delay for better UX
-        await new Promise(resolve => setTimeout(resolve, 1200));
+        const response = await fetch('MyanmarEnglishLawDictionary.json', {
+            signal: controller.signal
+        });
         
-        const response = await fetch('MyanmarEnglishLawDictionary.json');
+        clearTimeout(timeoutId);
         
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
@@ -108,13 +117,51 @@ async function loadDictionaryData() {
         
         dictionaryData = await response.json();
         filteredData = [...dictionaryData];
+        
+        // Render terms immediately
         renderTerms();
+        
+        // Hide loading
         showLoading(false);
         
         console.log(`Loaded ${dictionaryData.length} legal terms`);
+        
+        // Fallback: force show terms after a short delay
+        setTimeout(() => {
+            if (elements.termsGrid) {
+                elements.termsGrid.style.display = 'block';
+            }
+            if (elements.loadingSpinner) {
+                elements.loadingSpinner.style.display = 'none';
+            }
+        }, 1000);
+        console.log('Filtered data length:', filteredData.length);
+        
+        // Fallback: if no terms are showing, force render all terms
+        setTimeout(() => {
+            if (elements.termsGrid.children.length === 0 && filteredData.length > 0) {
+                console.log('Fallback: Rendering all terms');
+                renderTerms();
+            }
+        }, 500);
+        
+        // Additional fallback: force show terms after a short delay
+        setTimeout(() => {
+            if (filteredData.length > 0) {
+                elements.termsGrid.style.display = 'block';
+                elements.loadingSpinner.style.display = 'none';
+                if (elements.emptyState) {
+                    elements.emptyState.style.display = 'none';
+                }
+            }
+        }, 1000);
     } catch (error) {
         console.error('Error loading dictionary data:', error);
-        showError('Failed to load dictionary data. Please check if MyanmarEnglishLawDictionary.json exists.');
+        if (error.name === 'AbortError') {
+            showError('Loading timed out. Please refresh the page.');
+        } else {
+            showError('Failed to load dictionary data. Please check if MyanmarEnglishLawDictionary.json exists.');
+        }
         showLoading(false);
     }
 }
@@ -234,7 +281,7 @@ function handleSearch() {
         const query = elements.searchInput.value.toLowerCase().trim();
         filterTerms(query);
         showSearchSuggestions(query, 'desktop');
-    }, 300); // Debounce search
+    }, 150); // Reduced debounce for faster response
 }
 
 /**
@@ -246,7 +293,7 @@ function handleSearchMobile() {
         const query = elements.searchInputMobile.value.toLowerCase().trim();
         filterTerms(query);
         showSearchSuggestions(query, 'mobile');
-    }, 300); // Debounce search
+    }, 150); // Reduced debounce for faster response
 }
 
 /**
@@ -404,6 +451,51 @@ function showSkeletonLoading() {
 }
 
 /**
+ * Render initial batch of terms for faster loading
+ */
+function renderTermsInitial() {
+    if (filteredData.length === 0) {
+        elements.termsGrid.innerHTML = '';
+        if (elements.emptyState) {
+            elements.emptyState.style.display = 'block';
+        }
+        return;
+    }
+    
+    // Hide empty state
+    if (elements.emptyState) {
+        elements.emptyState.style.display = 'none';
+    }
+    
+    // Show first 20 terms initially for faster display
+    const initialBatch = filteredData.slice(0, 20);
+    const termsHTML = initialBatch.map((term, index) => `
+        <div class="term-card fade-in" data-index="${index}" data-type="${escapeHtml(term.type).toLowerCase()}" tabindex="0" role="button" aria-label="View details for ${escapeHtml(term.word)}">
+            <div class="card-body">
+                <h5 class="card-title">${escapeHtml(term.word)}</h5>
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="badge bg-${getTypeClass(term.type)}">${escapeHtml(term.type)}</span>
+                </div>
+                <p class="card-text myanmar-text mt-2">${escapeHtml(term.definition)}</p>
+            </div>
+        </div>
+    `).join('');
+    
+    elements.termsGrid.innerHTML = termsHTML;
+    
+    // Ensure terms grid is visible
+    elements.termsGrid.style.display = 'block';
+    
+    // Add click event listeners to term cards
+    addTermCardListeners();
+    
+    // Load remaining terms in background
+    if (filteredData.length > 20) {
+        setTimeout(() => renderTerms(), 100);
+    }
+}
+
+/**
  * Render terms to the grid
  */
 function renderTerms() {
@@ -430,6 +522,13 @@ function renderTerms() {
     elements.termsGrid.innerHTML = termsHTML;
     
     // Add click event listeners to term cards
+    addTermCardListeners();
+}
+
+/**
+ * Add event listeners to term cards
+ */
+function addTermCardListeners() {
     elements.termsGrid.querySelectorAll('.term-card').forEach(card => {
         card.addEventListener('click', function(e) {
             e.preventDefault();
@@ -708,8 +807,26 @@ function updateResultsInfo() {
  * Show/hide loading spinner
  */
 function showLoading(show) {
-    elements.loadingSpinner.style.display = show ? 'block' : 'none';
-    elements.termsGrid.style.display = show ? 'none' : 'block';
+    if (elements.loadingSpinner) {
+        elements.loadingSpinner.style.display = show ? 'block' : 'none';
+    }
+    if (elements.termsGrid) {
+        elements.termsGrid.style.display = show ? 'none' : 'block';
+    }
+}
+
+/**
+ * Show loading progress
+ */
+function showLoadingProgress(message, progress) {
+    const progressElement = document.getElementById('loadingProgress');
+    if (progressElement) {
+        progressElement.textContent = message;
+        const progressBar = progressElement.querySelector('.progress-bar');
+        if (progressBar) {
+            progressBar.style.width = `${progress}%`;
+        }
+    }
 }
 
 /**
@@ -788,114 +905,31 @@ CryptoJS.SHA256('your_password_here').toString()
 Current password hash: ${PASSWORD_HASH}
 `);
 
-// Visitor Counter Functions - Server-side tracking simulation
-function initializeVisitorCounter() {
-    // Simulate server-side visitor tracking
-    // In a real application, this would make an API call to your server
-    fetchVisitorCount();
-}
 
-async function fetchVisitorCount() {
-    try {
-        // Simulate API call to get visitor count
-        // For demo purposes, we'll use a combination of localStorage and sessionStorage
-        // to simulate different users
-        
-        // Check if this is a new session (different browser/device)
-        const sessionId = sessionStorage.getItem('sessionId');
-        if (!sessionId) {
-            // New session - increment visitor count
-            const storedCount = localStorage.getItem('visitorCount');
-            visitorCount = storedCount ? parseInt(storedCount) + 1 : 1;
-            localStorage.setItem('visitorCount', visitorCount.toString());
-            
-            // Generate unique session ID
-            const newSessionId = 'session_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
-            sessionStorage.setItem('sessionId', newSessionId);
-            
-            // Store session info
-            const sessions = JSON.parse(localStorage.getItem('visitorSessions') || '[]');
-            sessions.push({
-                id: newSessionId,
-                timestamp: new Date().toISOString(),
-                userAgent: navigator.userAgent.substring(0, 100), // Truncate for storage
-                ip: 'simulated_ip_' + Math.random().toString(36).substr(2, 8)
-            });
-            
-            // Keep only last 50 sessions to prevent localStorage overflow
-            if (sessions.length > 50) {
-                sessions.splice(0, sessions.length - 50);
-            }
-            
-            localStorage.setItem('visitorSessions', JSON.stringify(sessions));
-        } else {
-            // Existing session - get current count
-            const storedCount = localStorage.getItem('visitorCount');
-            visitorCount = storedCount ? parseInt(storedCount) : 0;
-        }
-        
-        // Update display
-        updateVisitorDisplay();
-        
-        // Simulate real-time updates (in a real app, this would be WebSocket or polling)
-        setTimeout(() => {
-            // Simulate occasional visitor count updates
-            if (Math.random() < 0.1) { // 10% chance of update
-                const storedCount = localStorage.getItem('visitorCount');
-                if (storedCount) {
-                    visitorCount = parseInt(storedCount);
-                    updateVisitorDisplay();
-                }
-            }
-        }, 5000);
-        
-    } catch (error) {
-        console.error('Error fetching visitor count:', error);
-        // Fallback to localStorage
-        const storedCount = localStorage.getItem('visitorCount');
-        visitorCount = storedCount ? parseInt(storedCount) : 1;
-        updateVisitorDisplay();
-    }
-}
 
-function updateVisitorDisplay() {
-    if (elements.visitorCount) {
-        elements.visitorCount.textContent = visitorCount.toLocaleString();
-    }
-}
 
-function getVisitorStats() {
-    const sessions = JSON.parse(localStorage.getItem('visitorSessions') || '[]');
-    const today = new Date().toDateString();
-    const todaySessions = sessions.filter(session => 
-        new Date(session.timestamp).toDateString() === today
-    );
-    
-    // Calculate unique users (approximate)
-    const uniqueUsers = new Set(sessions.map(s => s.ip)).size;
-    
-    // Calculate this week's visits
-    const weekAgo = new Date();
-    weekAgo.setDate(weekAgo.getDate() - 7);
-    const thisWeekSessions = sessions.filter(session => 
-        new Date(session.timestamp) > weekAgo
-    );
-    
-    return {
-        totalVisits: visitorCount,
-        uniqueUsers: uniqueUsers,
-        todayVisits: todaySessions.length,
-        thisWeekVisits: thisWeekSessions.length,
-        totalSessions: sessions.length,
-        lastVisit: sessions.length > 0 ? sessions[sessions.length - 1].timestamp : null
-    };
-}
+
+
 
 // Export functions for debugging
+
 window.MyanLawLexicon = {
+
     dictionaryData: () => dictionaryData,
+
     filteredData: () => filteredData,
+
     isAuthenticated: () => isAuthenticated,
+
     generatePasswordHash: (password) => CryptoJS.SHA256(password).toString(),
-    getVisitorStats: getVisitorStats
+
+    debug: () => {
+        console.log('Dictionary data length:', dictionaryData.length);
+        console.log('Filtered data length:', filteredData.length);
+        console.log('Terms grid display:', elements.termsGrid.style.display);
+        console.log('Loading spinner display:', elements.loadingSpinner.style.display);
+        console.log('Empty state display:', elements.emptyState.style.display);
+        console.log('Terms grid children:', elements.termsGrid.children.length);
+    }
+
 };

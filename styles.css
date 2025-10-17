@@ -933,9 +933,11 @@ body {
     }
 }
 
-/* Desktop Navbar Layout */
 @media (min-width: 992px) {
     .navbar-toggler {
+        display: none !important;
+    }
+    [data-theme="dark"] .navbar-toggler {
         display: none !important;
     }
 }
